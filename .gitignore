@@ -17,7 +17,6 @@
 ehthumbs.db
 Thumbs.db
 bower_components
-node_modules
 dist
 jsdoc
 deployment-config.json
@@ -27,5 +26,3 @@ index.html
 sftp-config.json
 npm-debug.log
 version.txt
-
-node_modules/
