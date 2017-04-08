@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Summarization in Marathi Analysis : NLP</title>
+  <script type="text/javascript" src="http://cdn.appacitive.com/sdk/js/appacitive-js-sdk-v1.0.10.js"></script>
+</head>
+<body>
+
+<style type="text/css">
+	pre {
+		white-space: pre-wrap;
+		border: 1px solid gray;
+	    padding: 20px;
+	    background: gainsboro;
+	}
+
+	.center {
+		text-align:center;
+	}
+
+	input[type=button] {
+		padding: 10px 20px;
+	    background: #6289b1;
+	    border: 0 none;
+	    cursor: pointer;
+	    border-radius: 5px;
+	    font-size: 12px;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	}
+
+</style>
+<div style="margin: 0 auto;width: 80%;">
+<h2 class="center">Please read the document and summary below and rate how well the summary describes the document.</h2>
+<br>
+<h3 class="center">DOCUMENT CONTENT</h3>
+
+<pre>
+<%= doc %>
+</pre>
+<h3 class="center">SUMMARY</h3>
+
+<pre>
+<%= summary %>
+</pre>
+
+<br>
+<div>
+	<h4 class="center">Please rate the summary above</h4>
+
+	<form style="margin: 0 auto; width: 250px;" class="center" name="myform" oninput="ratingValue.value = rating.valueAsNumber">
+		<input style="width:200px;float: left;" type="range" min="1" max="10" value="5" step="0.5" name="rating" id="rating">
+		<output style="width: 20px;float: right;" name="ratingValue" for="rating">5</output>
+		<br>
+		<br>
+		<input type="button" value="Submit" id="btnSubmit"/>
+	</form>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+	var docName = "<%= docName %>";
+	var docsRated = JSON.parse(<%- docsRated %>);
+
+
+	Appacitive.initialize({ 
+	  apikey: "rPntDlXHGtzYQ2JEot+Bxit14lW9A/Qw7+BrTJ5bPdo=",// The master or client api key for your app on appacitive.
+	  env: "sandbox",      // The environment that you are targetting (sandbox or live).
+	  appId: "155028085042971632"     // The app id for your app on appacitive. 
+	});
+
+	// Alternatively, you can use the typical Backbone syntax.
+	var Observation = Appacitive.Object.extend('observation');
+
+	// Alternatively, you can use the typical Backbone syntax.
+	var ExperimentConnection = Appacitive.Connection.extend('experiment_observation');
+
+	document.getElementById("btnSubmit").addEventListener("click", function() {
+		
+		var observation = new Observation();
+		observation.set("rating", document.getElementById("rating").value);
+		observation.set("document", docName);
+		// create an instance of that class 
+		var experimentConnection = new ExperimentConnection({
+		  endpoints: [{
+		    label: 'observation',
+		    object: observation //instance of Appacitive.Object person type
+		  }, {
+		    label: 'experiment',
+		    objectid: "155028655987360682"   //instance of Appacitive.Object person type
+		  }]
+		}); 
+
+		experimentConnection.save().then(function() {
+			docsRated.push(docName);
+			document.cookie = "docsRated=" + JSON.stringify(docsRated) + ";";
+			window.location = window.location;
+		});
+
+	});
+
+
+</script>
+
+</body>
+</html>
