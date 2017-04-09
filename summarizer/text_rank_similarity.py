@@ -11,7 +11,6 @@ sentenceDictionary = {};
 
 def getSimilarity(sentenceID1, sentenceID2):
     commonWordCount = len(set(sentenceDictionary[sentenceID1]) & set(sentenceDictionary[sentenceID2]))
-    print str(sentenceID1) + "-"+ str(len(sentenceDictionary[sentenceID1])) + "~~~" + str(sentenceID2) + "-" +str(len(sentenceDictionary[sentenceID2]))
     denominator = math.log(len(sentenceDictionary[sentenceID1])) + math.log(len(sentenceDictionary[sentenceID2]))
     return commonWordCount/denominator if denominator else 0
 
@@ -31,8 +30,8 @@ def printDictionary():
 def textRankSimilarity(summarySentenceCount):
     fileName = "../Marathi/documents/doc1"
     global sentenceDictionary
-    sentenceDictionary, size = cleanText(fileName)
-    printDictionary()
+    sentenceDictionary, sentences ,size = cleanText(fileName)
+    #printDictionary()
     graph = generateGraph(list(sentenceDictionary.keys()))
     pageRank = networkx.pagerank(graph)
     return sorted(pageRank, key=pageRank.get, reverse=True)[:summarySentenceCount]

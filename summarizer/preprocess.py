@@ -309,7 +309,8 @@ def cleanText(filename):
         # print(" ".join(sentence_dictionary[i]))
         size += len(sentence_dictionary[i])
     # print (size)
-    return sentence_dictionary,sentences, size
+    sentence_dictionary = {key: value for key, value in sentence_dictionary.items() if len(value)>0}
+    return sentence_dictionary, sentences, size
 
 readStemWords()
-cleanText(sys.argv[1])
+#cleanText(sys.argv[1])
