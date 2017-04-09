@@ -25,9 +25,23 @@ var walkSync = function(dir) {
   return filelist;
 };
 
-var satisfyRequest = function(req, res, language) {
+var experimentIds = {
+	"Portuguese" : {
+		"TextRankSummarizer" : "155113384972518187",
+		"LexRankSummarizer" : "155124091687404194",
+		"LsaSummarizer" : "155124106131538600",
+		"LuhnSummarizer" : "155124114800116696",
+		"SumBasicSummarizer" : "155124125727327204"
+	},
+	"Marathi" : {
+		"PageRankSummarizer": "155113393118904924"
+	}
+}
 
-	var experimentId = (language == "Portuguese") ? "155113384972518187" : "155113393118904924";
+var satisfyRequest = function(req, res, language, algorithm) {
+
+	var experimentId = experimentIds[language][algorithm];
+
 	var documents = walkSync(__dirname + "/../" + language + "/documents");
 	var docsRated = req.cookies['docsRated'];
 
@@ -39,7 +53,7 @@ var satisfyRequest = function(req, res, language) {
 	for(var i = 0;i< documents.length; i++) {
 		if (docsRated.indexOf(documents[i]) == -1) {
 			docName = documents[i];
-			sumDocName = docName + "_pageRank";
+			sumDocName = docName + "_" + algorithm;
 			break;
 		}	
 	}
@@ -56,25 +70,51 @@ var satisfyRequest = function(req, res, language) {
 		}
  		fs.readFile(__dirname + "/../" + language + '/summaries/' + sumDocName, 'utf-8', function(err, summary) {
  			if (err) {
- 				res.send("Error fetching summary for document " + docName);
+ 				res.send("Error fetching summary for document " + sumDocName);
  				return;
  			}
 
- 			res.render('index.ejs', { doc: doc, summary: summary, docName: docName, docsRated: JSON.stringify(docsRated), experimentId: experimentId });
+ 			res.render('index.ejs', { doc: doc, summary: summary, docName: docName, docsRated: JSON.stringify(docsRated), experimentId: experimentId, algorithm: algorithm, language: language });
 	 	});
  	});
 };
 
 app.get('/marathi', (req, res) => {
-	satisfyRequest(req, res, 'Marathi');
+	satisfyRequest(req, res, 'Marathi', 'PageRankSummarizer');
 });
 
-app.get('/portuguese', (req, res) => {
-	satisfyRequest(req, res, 'Portuguese');
+
+
+app.get('/Portuguese/LexRankSummarizer', (req, res) => {
+	satisfyRequest(req, res, 'Portuguese', 'LexRankSummarizer');
+});
+
+app.get('/Portuguese/LuhnSummarizer', (req, res) => {
+	satisfyRequest(req, res, 'Portuguese', 'LuhnSummarizer');
+});
+
+app.get('/Portuguese/LsaSummarizer', (req, res) => {
+	satisfyRequest(req, res, 'Portuguese', 'LsaSummarizer');
+});
+
+app.get('/Portuguese/SumBasicSummarizer', (req, res) => {
+	satisfyRequest(req, res, 'Portuguese', 'SumBasicSummarizer');
+});
+
+app.get('/Portuguese/TextRankSummarizer', (req, res) => {
+	satisfyRequest(req, res, 'Portuguese', 'TextRankSummarizer');
+});
+
+app.get('/Portuguese', (req, res) => {
+	satisfyRequest(req, res, 'Portuguese', 'TextRankSummarizer');
 });
 
 app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+app.use(function(req, res){
+   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(process.env.PORT || 5000, function() {
