@@ -71,6 +71,7 @@
 <script type="text/javascript">
 
 	var docName = "<%= docName %>";
+	var sumDocName = "<%= sumDocName %>";
 	var docsRated = <%- docsRated %>;
 	var experimentId = "<%= experimentId %>";
 
@@ -103,7 +104,7 @@
 		}); 
 
 		experimentConnection.save().then(function() {
-			docsRated.push(docName);
+			docsRated.push(sumDocName);
 			document.cookie = "docsRated=" + JSON.stringify(docsRated) + ";";
 			window.location = window.location;
 		});

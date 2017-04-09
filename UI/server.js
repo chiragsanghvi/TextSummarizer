@@ -42,7 +42,7 @@ var satisfyRequest = function(req, res, language, algorithm) {
 
 	var experimentId = experimentIds[language][algorithm];
 
-	var documents = walkSync(__dirname + "/../" + language + "/documents");
+	var documents = walkSync(__dirname + "/../" + language + "/summaries");
 	var docsRated = req.cookies['docsRated'];
 
 	if (!docsRated ||  docsRated == "") docsRated = [];
@@ -51,30 +51,39 @@ var satisfyRequest = function(req, res, language, algorithm) {
 	var docName, sumDocName;
 
 	for(var i = 0;i< documents.length; i++) {
-		if (docsRated.indexOf(documents[i]) == -1) {
-			docName = documents[i];
-			sumDocName = docName + "_" + algorithm;
+		if ((documents[i].indexOf(algorithm) != -1) && docsRated.indexOf(documents[i]) == -1) {
+			sumDocName = documents[i];
+			docName = sumDocName.replace("_" + algorithm, "");
 			break;
 		}	
 	}
-
+	
 	if (!docName) {
 		res.send("No more documents to rate. Come back later");
 		return;
 	}
 
- 	fs.readFile(__dirname + "/../"  + language + '/documents/' + docName, 'utf-8', function(err, doc) {
+ 	fs.readFile(__dirname + "/../"  + language + '/summaries/' + sumDocName, 'utf-8', function(err, summary) {
  		if (err) {
-			res.send("Error fetching document " + docName);
+			res.send("Error fetching summary for  document " + sumDocName + "\n" + err.message);
 			return;
 		}
- 		fs.readFile(__dirname + "/../" + language + '/summaries/' + sumDocName, 'utf-8', function(err, summary) {
+ 		fs.readFile(__dirname + "/../" + language + '/documents/' + docName, 'utf-8', function(err, doc) {
  			if (err) {
- 				res.send("Error fetching summary for document " + sumDocName);
+ 				res.send("Error fetching document " + docName + "\n" + err.message);
  				return;
  			}
 
- 			res.render('index.ejs', { doc: doc, summary: summary, docName: docName, docsRated: JSON.stringify(docsRated), experimentId: experimentId, algorithm: algorithm, language: language });
+ 			res.render('index.ejs', { 
+ 				doc: doc, 
+ 				summary: summary, 
+ 				docName: docName, 
+ 				sumDocName: sumDocName,
+ 				docsRated: JSON.stringify(docsRated), 
+ 				experimentId: experimentId, 
+ 				algorithm: algorithm, 
+ 				language: language
+ 			});
 	 	});
  	});
 };
