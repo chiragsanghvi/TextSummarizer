@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+  <title>Text Summarization Analysis : NLP</title>
+  <script type="text/javascript" src="//cdn.appacitive.com/sdk/js/appacitive-js-sdk-v1.0.10.js"></script>
+</head>
+	<body>
+
+		<style type="text/css">
+			pre {
+				white-space: pre-wrap;
+				border: 1px solid gray;
+			    padding: 20px;
+			    background: gainsboro;
+			}
+
+			.center {
+				text-align:center;
+			}
+
+			input[type=button] {
+				padding: 10px 20px;
+			    background: #6289b1;
+			    border: 0 none;
+			    cursor: pointer;
+			    border-radius: 5px;
+			    font-size: 12px;
+			    font-weight: bold;
+			    text-transform: uppercase;
+			}
+
+
+			table {
+				border-collapse: collapse;
+				border-left: 1px solid #ddd;
+				border-right: 1px solid #ddd;
+			}
+
+			
+			th {
+			    text-align: left;
+			    height: 30px;
+			    background-color: #4CAF50;
+    			color: white;
+			}
+
+			th, td {
+			    padding: 10px;
+			    text-align: left;
+			}
+
+			th, td {
+			    border-bottom: 1px solid #ddd;
+			}
+
+			tr:nth-child(even) {
+				background-color: #f2f2f2
+			}
+
+		</style>
+		<div style="margin: 0 auto;width: 80%;text-align: center;">
+			  	<h1> Text Summarization Analysis Results </h1>
+			  	<% for(var lang in langs) { %>
+			  	<div>
+			  		<h2><%= lang %> : <%= langs[lang].length %> Surveys</h2>
+			  		<table style="width: 700px;margin: 0 auto;">
+				  		<thead>
+				  			<th>Algorithm</th>
+				  			<th>Average</th>
+				  			<th>Maximum</th>
+				  			<th>Minimum</th>
+				  			<th>Total Surveys</th>
+				  		</thead>
+				  		<tbody>
+				  		<% for(var i=0; i< langs[lang].length; i++) { %>
+					        <tr>
+					            <td><b><%= langs[lang][i].algorithm %></b></td>
+					            <td><%= langs[lang][i].average %></td>
+					            <td><%= langs[lang][i].max %></td>
+					            <td><%= langs[lang][i].min %></td>
+					            <td><%= langs[lang][i].count %></td>
+					        </td>
+					    <% } %>
+					    </tbody>
+				    </table>
+			  	</div>
+			  	<% } %>
+
+		</div>
+	</body>
+</html>

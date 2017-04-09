@@ -3,9 +3,18 @@ const app = express();
 const cookieParser = require('cookie-parser');
 const fs = require('fs');
 const path = require('path');
+const Appacitive = require('appacitive')
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 app.use(cookieParser());
+
+Appacitive.initialize({ 
+  apikey: "rPntDlXHGtzYQ2JEot+Bxit14lW9A/Qw7+BrTJ5bPdo=",// The master or client api key for your app on appacitive.
+  env: "sandbox",      // The environment that you are targetting (sandbox or live).
+  appId: "155028085042971632"     // The app id for your app on appacitive. 
+});
+var Experiment = Appacitive.Object.extend('experiment');
 
 // List all files in a directory in Node.js recursively in a synchronous fashion
 var walkSync = function(dir) {
@@ -31,10 +40,12 @@ var experimentIds = {
 		"LexRankSummarizer" : "155124091687404194",
 		"LsaSummarizer" : "155124106131538600",
 		"LuhnSummarizer" : "155124114800116696",
-		"SumBasicSummarizer" : "155124125727327204"
+		"SumBasicSummarizer" : "155124125727327204",
+		"BaseLine": "155177166949188379"
 	},
 	"Marathi" : {
-		"PageRankSummarizer": "155113393118904924"
+		"PageRankSummarizer": "155113393118904924",
+		"BaseLine": "155177156937384892"
 	}
 }
 
@@ -94,8 +105,39 @@ app.get('/marathi', (req, res) => {
 	satisfyRequest(req, res, 'Marathi');
 });
 
-app.get('/Portuguese', (req, res) => {
+app.get('/portuguese', (req, res) => {
 	satisfyRequest(req, res, 'Portuguese');
+});
+
+app.get('/results', (req,res) => {
+	Experiment.findAll({ fields: ["*"] }).fetch().then(function(exps) {
+		var langs = {};
+
+		exps.forEach(function(exp) {
+			var expJ = exp.toJSON();
+			if (!langs[expJ.language]) langs[expJ.language] = [];
+
+			if (expJ['$average']) expJ.average = expJ['$average'].all || 0;
+			else expJ.average = 0;
+
+			if (expJ['$count']) expJ.count = expJ['$count'].all || 0;
+			else expJ.count = 0;
+
+			if (expJ['$max']) expJ.max = expJ['$max'].all || 0;
+			else expJ.max = 0;
+
+			if (expJ['$min']) expJ.min = expJ['$min'].all || 0;
+			else expJ.min = 0;
+
+			langs[expJ.language].push(expJ);
+		});
+
+		//res.send(JSON.stringify(langs));
+
+		res.render('results.ejs', { langs: langs });
+	}, function(err) {
+		res.send("Error fetching results " + err.message);
+	});
 });
 
 app.get('*', (req, res) => {
