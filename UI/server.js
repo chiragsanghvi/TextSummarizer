@@ -41,11 +41,11 @@ var experimentIds = {
 		"LsaSummarizer" : "155124106131538600",
 		"LuhnSummarizer" : "155124114800116696",
 		"SumBasicSummarizer" : "155124125727327204",
-		"BaseLine": "155177166949188379"
+		"Human": "155177166949188379"
 	},
 	"Marathi" : {
 		"PageRankSummarizer": "155113393118904924",
-		"BaseLine": "155177156937384892"
+		"Human": "155177156937384892"
 	}
 }
 
