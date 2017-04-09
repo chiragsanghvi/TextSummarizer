@@ -15,9 +15,9 @@ sentences_processing = []
 sentence_dictionary = collections.defaultdict(dict)
 
 
-def tokenize():
+def tokenize(filename):
     global sentences, sentences_processing, sentence_dictionary
-    with io.open(sys.argv[1], "r", encoding="utf-8") as inputFile:
+    with io.open(filename, "r", encoding="utf-8") as inputFile:
         data = inputFile.read()
         # sentences = data.strip().split(".")
         inputFile.close()
@@ -238,13 +238,16 @@ def remove_No_Gender(word):
 def stemmer_mar(words):
     return [remove_No_Gender(remove_case(word)) for word in words]
 
+def cleanText(filename = "input.txt"):
+    global sentence_dictionary
+    readStopWords()
+    tokenize(filename)
+    print("after removing stopwords")
+    size = 0
+    for i in range(0, len(sentence_dictionary)):
+        # print(" ".join(sentence_dictionary[i]))
+        size += len(sentence_dictionary[i])
+    # print (size)
+    return sentence_dictionary, size
 
-readStopWords()
-tokenize()
-print("after removing stopwords")
-for i in range(0, len(sentence_dictionary)):
-    print(" ".join(sentence_dictionary[i]))
-
-
-    # for sentence in :
-    #         print(sentence)
+cleanText()
