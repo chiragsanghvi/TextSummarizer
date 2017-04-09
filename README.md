@@ -3,7 +3,6 @@
 ```
 
        Akshay Joshi	       Chirag Sanghvi	      Hirak Hemant Modi	           Pablo Garay
-        7527589273               4992967404               9942860664                1112758820
       akshayaj@usc.edu         cksanghv@usc.edu        hirakhem@usc.edu    	 garayfer@usc.edu
  ```
 # Introduction
