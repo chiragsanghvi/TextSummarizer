@@ -32,7 +32,9 @@ def printDictionary():
 def textRankSimilarity(summarySentenceCount):
     fileName = "../Marathi/documents/doc1"
     global sentenceDictionary
-    sentenceDictionary, sentences ,size = cleanText(fileName)
+    sentenceDictionary = {};
+    sentences = []
+    sentenceDictionary, sentences, size = cleanText(fileName)
     #printDictionary()
     graph = generateGraph(list(sentenceDictionary.keys()))
     pageRank = networkx.pagerank(graph)
