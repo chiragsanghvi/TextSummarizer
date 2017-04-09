@@ -1,0 +1,1 @@
+As crianças mortas tinham entre 6  e 7 anos.

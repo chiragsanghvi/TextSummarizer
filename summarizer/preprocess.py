@@ -26,10 +26,10 @@ def tokenize(filename):
     # # print data
     sentences = sent_tokenize(data)
     sentences_processing = copy.deepcopy(sentences)
-    print("using nltk")
+    # print("using nltk")
     counter = 0
     for sentence in sentences_processing:
-        print(sentence)
+        # print(sentence)
         sentence = sentence[:-1]
         # sentence = re.sub("\d+", "", sentence)
         sentence = re.sub(',|\.|-|\(|\)', ' ', sentence)
@@ -238,11 +238,11 @@ def remove_No_Gender(word):
 def stemmer_mar(words):
     return [remove_No_Gender(remove_case(word)) for word in words]
 
-def cleanText(filename = "input.txt"):
+def cleanText(filename):
     global sentence_dictionary
     readStopWords()
     tokenize(filename)
-    print("after removing stopwords")
+    # print("after removing stopwords")
     size = 0
     for i in range(0, len(sentence_dictionary)):
         # print(" ".join(sentence_dictionary[i]))
@@ -250,4 +250,4 @@ def cleanText(filename = "input.txt"):
     # print (size)
     return sentence_dictionary, size
 
-cleanText()
+# cleanText()
