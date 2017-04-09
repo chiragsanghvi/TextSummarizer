@@ -110,11 +110,11 @@ app.get('/Portuguese', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-	res.sendFile(path.join('UI/index.html'));
+	res.sendFile('index.html', {"root": __dirname});
 });
 
 app.use(function(req, res){
-   res.sendFile(path.join('UI/index.html'));
+   res.sendFile('index.html', {"root": __dirname});
 });
 
 app.listen(process.env.PORT || 5000, function() {
