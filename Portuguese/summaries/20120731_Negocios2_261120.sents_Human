@@ -1,0 +1,1 @@
+O segundo "blackout" em dois dias deixou metade do país sem luz.

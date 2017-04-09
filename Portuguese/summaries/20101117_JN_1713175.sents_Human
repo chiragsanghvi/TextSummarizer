@@ -1,0 +1,1 @@
+A Aliança procura aumentar a cooperação com as Nações Unidas e União Europeia.

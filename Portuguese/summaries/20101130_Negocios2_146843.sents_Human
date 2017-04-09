@@ -1,0 +1,1 @@
+O iPad chega a Portugal com preço entre 499 e 799 euros.

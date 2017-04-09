@@ -1,0 +1,1 @@
+Bento XVI perdoou o ex-mordomo pela divulgação de documentos.

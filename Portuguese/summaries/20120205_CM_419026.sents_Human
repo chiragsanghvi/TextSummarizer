@@ -1,0 +1,1 @@
+A data da efeméride é 6 de Fevereiro, o mesmo dia que em 1952 subiu ao trono devido à morte do pai, Jorge VI.

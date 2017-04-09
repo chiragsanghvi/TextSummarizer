@@ -1,0 +1,1 @@
+Um meteorito, que os russos estimam que tivesse dez toneladas, desintegrou-se na sexta-feira de manhã perto da cidade de Tcheliabinsk.

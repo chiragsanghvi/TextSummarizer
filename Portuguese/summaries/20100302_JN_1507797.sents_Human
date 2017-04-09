@@ -1,0 +1,1 @@
+O corpo do motorista foi encontrado junto aos destroços do veículo.

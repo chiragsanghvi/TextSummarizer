@@ -1,0 +1,1 @@
+A profecia maia está a ser levada demasiado a sério na Rússia.

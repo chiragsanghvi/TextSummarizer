@@ -1,0 +1,1 @@
+A população de Marrocos está revoltada com um indulto real dado a um pedófilo espanhol condenado a 30 anos de prisão por ter violado 11 crianças.

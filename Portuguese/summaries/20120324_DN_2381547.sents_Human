@@ -1,0 +1,1 @@
+A contagem dos maias acabaria no solstício do Inverno do ano em curso, 21 de Dezembro de 2012.

@@ -1,0 +1,1 @@
+A explosão, não reivindicada, ocorreu por volta da meia noite e meia, altura em que os fiéis abandonavam a igreja dos Santos, em Alexandria, no Egipto.

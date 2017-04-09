@@ -1,0 +1,1 @@
+O avião que deverá transportar a selecção está no aeroporto de Cabinda, onde aterrou depois de conhecida a decisão do governo togolês em retirar a equipa da CAN2010.

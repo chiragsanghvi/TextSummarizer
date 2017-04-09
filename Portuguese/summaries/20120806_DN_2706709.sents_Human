@@ -1,0 +1,1 @@
+O objetivo do robô é perceber se Marte alguma vez teve condições para a existência dos "ingredientes básicos da vida".

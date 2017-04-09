@@ -1,0 +1,1 @@
+Militares malianos e islamitas estavam a confrontar-se com recurso a armas pesadas, na região de Mopti.

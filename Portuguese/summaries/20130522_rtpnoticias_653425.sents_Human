@@ -1,0 +1,1 @@
+Nas duas explosões próximas da meta morreram 3 pessoas e ficaram feridas 264.

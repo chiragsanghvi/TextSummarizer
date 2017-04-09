@@ -1,0 +1,1 @@
+As receitas saíram melhores do que o esperado no segundo trimestre.

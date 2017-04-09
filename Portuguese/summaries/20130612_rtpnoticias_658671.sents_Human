@@ -1,0 +1,1 @@
+Os sindicatos gregos apelam a uma greve.

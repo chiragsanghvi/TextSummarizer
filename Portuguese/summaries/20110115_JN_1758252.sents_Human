@@ -1,0 +1,1 @@
+Mais de 80% dos quatro milhões de eleitores inscritos participaram na votação.

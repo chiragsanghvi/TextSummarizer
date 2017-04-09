@@ -1,0 +1,1 @@
+O primeiro-ministro anunciou que o complexo de Fukushima deverá ser desativado.

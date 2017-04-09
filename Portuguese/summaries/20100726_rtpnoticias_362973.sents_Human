@@ -1,0 +1,1 @@
+A plataforma "WikiLeaks" entregou a vários jornais relatórios secretos da guerra no Afeganistão.

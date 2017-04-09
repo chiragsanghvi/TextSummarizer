@@ -1,0 +1,1 @@
+A Rainha Isabel II de Inglaterra vai receber a realeza do mundo inteiro na celebração dos 60 anos de trono.

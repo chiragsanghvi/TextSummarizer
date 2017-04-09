@@ -1,0 +1,1 @@
+Barack Obama acusa Mitt Romney de propor o regresso à«política externa dos anos 1980».

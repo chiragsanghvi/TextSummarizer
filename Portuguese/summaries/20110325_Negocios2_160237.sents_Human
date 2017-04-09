@@ -1,0 +1,1 @@
+Na Síria, pelo menos 24 pessoas foram mortas nas manifestações contra Bashar al-Assad.

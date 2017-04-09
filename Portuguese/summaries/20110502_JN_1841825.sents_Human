@@ -1,0 +1,1 @@
+O casamento custou 282 mil euros aos pais da noiva.

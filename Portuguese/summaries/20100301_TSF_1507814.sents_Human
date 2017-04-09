@@ -1,0 +1,1 @@
+Uma derrocada no Nordeste, nos Açores, fez com que um autocarro que transportava alunos de uma escola caísse numa ravina.

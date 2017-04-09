@@ -1,0 +1,1 @@
+O acidente ferroviário que na quarta-feira causou pelo menos 80 mortos e 168 feridos terá sido originado por excesso de velocidade.

@@ -1,0 +1,1 @@
+A partir de Janeiro de 2012, a Catalunha torna-se a segunda região a proibir as corridas de touros, depois das Canárias em 1991.

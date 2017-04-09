@@ -1,0 +1,1 @@
+O governo de Chipre poderá sugerir uma taxa de 15% sobre os depósitos bancários superiores a 100 mil euros.

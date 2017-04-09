@@ -1,0 +1,1 @@
+Votaram a favor as bancadas do BE, PCP, PEV, a maioria dos deputados do PS e 16 deputados do PSD.

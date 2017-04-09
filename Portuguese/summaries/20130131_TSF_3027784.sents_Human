@@ -1,0 +1,1 @@
+A editora da Tinta da China foi constituída arguida na sequência da publicação do livro Diamantes de Sangue, do jornalista angolano Rafael Marques.

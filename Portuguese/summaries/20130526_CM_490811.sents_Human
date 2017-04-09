@@ -1,0 +1,1 @@
+Pelo menos 96 pessoas foram detidas durante uma manifestação contra a recém-aprovada legalização dos casamentos entre pessoas do mesmo sexo.

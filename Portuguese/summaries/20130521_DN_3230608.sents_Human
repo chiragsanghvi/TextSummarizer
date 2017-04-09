@@ -1,0 +1,1 @@
+Um primeiro balanço do tornado que devastou Moore, no Oklahoma, Estados Unidos, apontava para 91 vítimas mortais.

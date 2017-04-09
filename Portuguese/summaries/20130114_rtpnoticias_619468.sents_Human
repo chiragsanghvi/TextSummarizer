@@ -1,0 +1,1 @@
+Os radicais islâmicos abandonaram as cidades no norte do Mali, nomeadamente Gao e Timbuctu.

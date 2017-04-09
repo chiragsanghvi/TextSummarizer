@@ -1,0 +1,1 @@
+Os títulos atingiram o valor mais baixo nos 30,10 euros, o que compara com os 45 dólares no dia de estreia.

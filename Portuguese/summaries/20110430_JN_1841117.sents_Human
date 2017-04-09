@@ -1,0 +1,1 @@
+O príncipe e a mulher vão passar o primeiro fim-de-semana enquanto casal no Reino Unido.

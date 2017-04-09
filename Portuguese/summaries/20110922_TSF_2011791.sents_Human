@@ -1,0 +1,1 @@
+Aristides Pereira foi uma figura histórica dos movimentos de libertação africanos, tendo fundador do PAIGC (Partido Africano para a Independência da Guiné e Cabo Verde), ao lado de Amílcar Cabral.

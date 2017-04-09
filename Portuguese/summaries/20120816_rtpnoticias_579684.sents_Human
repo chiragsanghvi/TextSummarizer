@@ -1,0 +1,1 @@
+O Governo do Equador decidiu conceder asilo ao fundador do portal WikiLeaks.

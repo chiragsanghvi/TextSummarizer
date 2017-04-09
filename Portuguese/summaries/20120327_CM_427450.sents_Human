@@ -1,0 +1,1 @@
+James Cameron tornou-se no primeiro homem a mergulhar sozinho até ao ponto mais profundo do planeta, a Fossa das Marianas (Oceano Pacífico), a 10 911 metros.

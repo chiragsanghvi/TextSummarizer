@@ -1,0 +1,1 @@
+O golpe de Estado militar teve lugar depois do ultimato que instava o presidente Morsi a partilhar o poder com a oposição e a responder às reivindicações populares.

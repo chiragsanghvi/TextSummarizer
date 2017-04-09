@@ -1,0 +1,1 @@
+A repressão policial motivou outras pessoas a protestarem pela paz e pelo direito de manifestação, bem como outras queixas, entre quais corrupção e a falta de transparência.As manifestações criticam os elevados gastos com a organização de eventos desportivos em detrimento de áreas como a saúde e a educação.

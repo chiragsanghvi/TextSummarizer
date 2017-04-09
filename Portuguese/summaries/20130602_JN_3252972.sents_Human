@@ -1,0 +1,1 @@
+O parlamento aprovou a 17 de maio (com 99 votos a favor, 94 contra e nove abstenções), na generalidade, um projeto de lei do PS para que os homossexuais possam co-adotar filhos adotivos ou biológicos da pessoa com quem estão casados ou com quem vivem em união de facto.

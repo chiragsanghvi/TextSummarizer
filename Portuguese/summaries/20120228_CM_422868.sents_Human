@@ -1,0 +1,1 @@
+O navio de cruzeiro ‘Costa Allegra’ estava à deriva no Índico, com mais de mil pessoas a bordo, na sequência de um incêndio na casa das máquinas.

@@ -1,0 +1,1 @@
+A Rússia aceitou integrar o sistema de escudo anti-míssil da Aliança.

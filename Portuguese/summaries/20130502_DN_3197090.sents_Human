@@ -1,0 +1,1 @@
+Dois meses após a resignação, Bento XVI voltou ao Vaticano.

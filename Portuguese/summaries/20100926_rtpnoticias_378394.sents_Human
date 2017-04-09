@@ -1,0 +1,1 @@
+Uma "gaiola" para salvar os homens soterrados chegou às equipas de socorro.

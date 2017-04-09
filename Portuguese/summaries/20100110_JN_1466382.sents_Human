@@ -1,0 +1,1 @@
+O ataque, reivindicado pela Frente para a Libertação do Enclave de Cabinda (FLEC), causou a morte ao condutor do autocarro, de origem angolana, e a dois membros da delegação togolesa, tendo outros seis ficado feridos.
