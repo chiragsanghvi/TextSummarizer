@@ -66,7 +66,7 @@
 
 	var docName = "<%= docName %>";
 	var docsRated = <%- docsRated %>;
-
+	var experimentId = "<%= experimentId %>";
 
 	Appacitive.initialize({ 
 	  apikey: "rPntDlXHGtzYQ2JEot+Bxit14lW9A/Qw7+BrTJ5bPdo=",// The master or client api key for your app on appacitive.
@@ -92,7 +92,7 @@
 		    object: observation //instance of Appacitive.Object person type
 		  }, {
 		    label: 'experiment',
-		    objectid: "155028655987360682"   //instance of Appacitive.Object person type
+		    objectid: experimentId   //instance of Appacitive.Object person type
 		  }]
 		}); 
 

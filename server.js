@@ -24,12 +24,14 @@ var walkSync = function(dir) {
   return filelist;
 };
 
-app.get('/', (req, res) => {
+var satisfyRequest = function(req, res, language) {
 
-	var documents = walkSync(__dirname + "/documents");
+	var experimentId = (language == "Portuguese") ? "155113393118904924": "155113384972518187";
+	var documents = walkSync(__dirname + "/" + language + "/documents");
 	var docsRated = req.cookies['docsRated'];
 
 	if (!docsRated ||  docsRated == "") docsRated = [];
+	else docsRated = JSON.parse(docsRated);
 
 	var docName, sumDocName;
 
@@ -46,20 +48,28 @@ app.get('/', (req, res) => {
 		return;
 	}
 
- 	fs.readFile('documents/' + docName, 'utf-8', function(err, doc) {
+ 	fs.readFile(language + '/documents/' + docName, 'utf-8', function(err, doc) {
  		if (err) {
 			res.send("Error fetching document " + docName);
 			return;
 		}
- 		fs.readFile('summaries/' + sumDocName, 'utf-8', function(err, summary) {
+ 		fs.readFile(language + '/summaries/' + sumDocName, 'utf-8', function(err, summary) {
  			if (err) {
  				res.send("Error fetching summary for document " + docName);
  				return;
  			}
 
- 			res.render('index.ejs', { doc: doc, summary: summary, docName: docName, docsRated: JSON.stringify(docsRated) });
+ 			res.render('index.ejs', { doc: doc, summary: summary, docName: docName, docsRated: JSON.stringify(docsRated), experimentId: experimentId });
 	 	});
  	});
+};
+
+app.get('/marathi', (req, res) => {
+	satisfyRequest(req, res, 'Marathi');
+});
+
+app.get('/portuguese', (req, res) => {
+	satisfyRequest(req, res, 'Portuguese');
 });
 
 app.listen(process.env.PORT || 5000, function() {
