@@ -14,6 +14,7 @@ def getSimilarity(sentenceID1, sentenceID2):
     denominator = math.log(len(sentenceDictionary[sentenceID1])) + math.log(len(sentenceDictionary[sentenceID2]))
     return commonWordCount/denominator if denominator else 0
 
+
 def generateGraph(nodeList):
     graph = networkx.Graph()
     graph.add_nodes_from(nodeList)
@@ -25,7 +26,8 @@ def generateGraph(nodeList):
 
 def printDictionary():
     for key,val in sentenceDictionary.iteritems():
-        print str(key) + " : " + " ".join(sentenceDictionary[key])
+        print str(key) + " : " + " ".join(sentenceDictionary[key])  
+
 
 def textRankSimilarity(summarySentenceCount):
     fileName = "../Marathi/documents/doc1"
@@ -34,7 +36,7 @@ def textRankSimilarity(summarySentenceCount):
     #printDictionary()
     graph = generateGraph(list(sentenceDictionary.keys()))
     pageRank = networkx.pagerank(graph)
-    return sorted(pageRank, key=pageRank.get, reverse=True)[:summarySentenceCount]
+    return " ".join([sentences[sentenceID] for sentenceID in sorted(pageRank, key=pageRank.get, reverse=True)[:summarySentenceCount]])
 
 
 if __name__ == "__main__":
