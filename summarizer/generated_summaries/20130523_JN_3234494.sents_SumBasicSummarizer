@@ -1,0 +1,1 @@
+Mais de 100 pessoas foram resgatadas dos escombros.

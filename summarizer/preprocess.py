@@ -1,14 +1,10 @@
 # coding=utf-8
 from __future__ import print_function
-from __future__ import print_function
-from __future__ import print_function
 from __future__ import unicode_literals
 from collections import defaultdict
 import io, nltk, numpy, copy, collections, re, sys, json
 from nltk.tokenize import sent_tokenize
 
-# import sumy
-# from sumy.summarizers.lsa import LsaSummarizer as summarizer
 nltk.download('punkt')
 stopwords = set()
 sentences = []
@@ -18,7 +14,6 @@ stemWords = {}
 
 def readStemWords():
     global stemWords
-
     with io.open("word_list_marathi.txt", encoding='utf-8') as textFile:
         index = 0
         for line in textFile:
@@ -27,9 +22,6 @@ def readStemWords():
                 index += 1
                 wordEndIndex = line.find(">")
                 word = line[2:wordEndIndex]
-
-
-
                 line = line[wordEndIndex + 1:]
                 baseEndIndex = line.find("]")
                 base = line[1:baseEndIndex].strip()
@@ -106,7 +98,7 @@ def removeStopWords(wordlist):
     return newlist
 
 
-def remove_case(word):
+def removeCase(word):
     word_length = len(word) - 1
     if word_length > 5:
         suffix = "शया"
@@ -190,17 +182,13 @@ def remove_case(word):
     return word
 
 
-def remove_No_Gender(word):
-
+def removeNoGender(word):
     global stemWords
-
     orig = word
-
     if word in stemWords:
-        #print("From word - " + word + " : "  + stemWords[word]["stem"])
         return stemWords[word]["stem"]
-
     word_length = len(word) - 1
+
     if word_length > 5:
         suffix = " ुरडा"
         if word.endswith(suffix):
@@ -290,14 +278,14 @@ def remove_No_Gender(word):
         suffix = "त"
         if word.endswith(suffix):
             return word[:-len(suffix)]
-
+    
     #print("From stemmer - " + orig + " : " + word)
-
     return word
 
 
 def stemmerMarathi(words):
-    return [remove_No_Gender(remove_case(word)) for word in words]
+    return [removeNoGender(removeCase(word)) for word in words]
+
 
 def cleanText(filename):
     global sentence_dictionary, sentences
