@@ -1,0 +1,1 @@
+Localidades do Estado norte-americano ficaram devastadas após a passagem de um tornado com três quilómetros de diâmetro e ventos superiores a 300 km/h.

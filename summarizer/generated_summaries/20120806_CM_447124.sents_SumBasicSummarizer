@@ -1,0 +1,1 @@
+Alimentado por um gerador nuclear, tentará descobrir se o ambiente marciano foi propício ao desenvolvimento da vida microbiana.
