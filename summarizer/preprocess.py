@@ -300,7 +300,7 @@ def stemmerMarathi(words):
     return [remove_No_Gender(remove_case(word)) for word in words]
 
 def cleanText(filename):
-    global sentence_dictionary
+    global sentence_dictionary, sentences
     readStopWords()
     tokenize(filename)
     # print("after removing stopwords")
@@ -309,7 +309,8 @@ def cleanText(filename):
         # print(" ".join(sentence_dictionary[i]))
         size += len(sentence_dictionary[i])
     # print (size)
-    return sentence_dictionary, size
+    sentence_dictionary = {key: value for key, value in sentence_dictionary.items() if len(value)>0}
+    return sentence_dictionary, sentences, size
 
 readStemWords()
-cleanText(sys.argv[1])
+#cleanText(sys.argv[1])
