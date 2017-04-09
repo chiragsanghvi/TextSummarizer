@@ -26,3 +26,4 @@ index.html
 sftp-config.json
 npm-debug.log
 version.txt
+node_modules
