@@ -28,28 +28,32 @@ if __name__ == "__main__":
     # url = "http://www.zsstritezuct.estranky.cz/clanky/predmety/cteni/jak-naucit-dite-spravne-cist.html"
     # parser = HtmlParser.from_url(url, Tokenizer(LANGUAGE))
     # or for plain text files
-    with open("generated_summaries/summaryPT2010-2011.txt", "w") as f_out:
-        for root, dirs, files in os.walk("PriberamCompressiveSummarizationCorpus/PT2010-2011/docs/"):
-            for filename in files:
-                if filename.endswith(".sents"):
-                    file_path = os.path.join(root, filename)
-                    print(file_path, file=f_out)
 
-                    # File Analysis - summarization
-                    print(file=f_out)
-                    parser = PlaintextParser.from_file(file_path, Tokenizer(LANGUAGE))
-                    stemmer = Stemmer(LANGUAGE)
+    for root, dirs, files in os.walk("PriberamCompressiveSummarizationCorpus/PT2010-2011/docs/"):
+        for filename in files:
+            if filename.endswith(".sents"):
+                file_path = os.path.join(root, filename)
+                # print(file_path, file=f_out)
 
-                    for summarizer in [LsaSummarizer, TextRankSummarizer, LexRankSummarizer, SumBasicSummarizer, LuhnSummarizer]:
-                        print(summarizer.__name__, file=f_out)
-                        summarizer = summarizer(stemmer)
-                        summarizer.stop_words = get_stop_words(LANGUAGE)
+                # File Analysis - summarization
+                # print(file=f_out)
+                parser = PlaintextParser.from_file(file_path, Tokenizer(LANGUAGE))
+                stemmer = Stemmer(LANGUAGE)
 
-                        for sentence in summarizer(parser.document, SENTENCES_COUNT):
-                            print(sentence, file=f_out)
-                        print(file=f_out)
-                    print("------------------------------------------------------------------------------", file=f_out)
-                    files_summarized_count += 1
+                for summarizer in [LsaSummarizer, TextRankSummarizer, LexRankSummarizer, SumBasicSummarizer, LuhnSummarizer]:
+                    # print(summarizer.__name__, file=f_out)
+                    method_name = summarizer.__name__
+                    summarizer = summarizer(stemmer)
+                    summarizer.stop_words = get_stop_words(LANGUAGE)
 
-        print("Total Files summarized: ", files_summarized_count, file=f_out)
+                    for sentence in summarizer(parser.document, SENTENCES_COUNT):
+                        summary_destination_folder = os.path.join("generated_summaries", filename + "_" + method_name)
+
+                        with open(summary_destination_folder, "w") as f_sum:
+                            print(sentence, file=f_sum)
+                    # print(file=f_out)
+                # print("------------------------------------------------------------------------------", file=f_out)
+                files_summarized_count += 1
+
+        print("Total Files summarized: ", files_summarized_count)
 
