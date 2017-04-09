@@ -1,0 +1,1 @@
+O Jubileu de Diamante marca os 60 anos Isabel II no trono.

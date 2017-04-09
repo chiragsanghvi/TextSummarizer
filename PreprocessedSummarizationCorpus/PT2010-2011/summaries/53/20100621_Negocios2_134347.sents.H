@@ -1,0 +1,1 @@
+A selecção de Portugal venceu por sete a zero frente à equipa de Coreia do Norte.

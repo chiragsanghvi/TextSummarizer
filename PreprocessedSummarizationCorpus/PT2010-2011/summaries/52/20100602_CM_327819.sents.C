@@ -1,0 +1,1 @@
+O Conselho de Segurança das Nações Unidas condenou o ataque e lamentou a perda de vidas.

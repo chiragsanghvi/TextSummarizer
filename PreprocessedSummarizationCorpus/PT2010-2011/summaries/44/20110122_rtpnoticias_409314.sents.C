@@ -1,0 +1,1 @@
+Subiu para 759 o número de mortos na região serrana do Rio de Janeiro, onde há também registo de 400 desaparecidos.

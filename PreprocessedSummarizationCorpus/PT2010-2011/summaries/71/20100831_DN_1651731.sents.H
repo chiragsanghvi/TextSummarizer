@@ -1,0 +1,1 @@
+Escavadora abre um poço de 75 centímetros de diâmetro e avança 20 metros por dia.

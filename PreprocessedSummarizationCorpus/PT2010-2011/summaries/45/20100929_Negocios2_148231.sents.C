@@ -1,0 +1,1 @@
+A Comissão Europeia propôs uma subvenção de 31,2 milhões de euros.

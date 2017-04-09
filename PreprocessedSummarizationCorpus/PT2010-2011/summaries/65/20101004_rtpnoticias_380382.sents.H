@@ -1,0 +1,1 @@
+Os brasileiros vão decidir numa segunda volta quem será o sucessor de Lula da Silva na Presidência da República.

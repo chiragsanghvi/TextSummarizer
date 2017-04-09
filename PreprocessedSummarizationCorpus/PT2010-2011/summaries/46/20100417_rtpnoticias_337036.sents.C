@@ -1,0 +1,1 @@
+As partículas vítreas transportadas pela nuvem de cinza podem ser fatais para os motores dos aviões.A Eurocontrol estima que a nuvem continue a produzir danos nas ligações aéreas.

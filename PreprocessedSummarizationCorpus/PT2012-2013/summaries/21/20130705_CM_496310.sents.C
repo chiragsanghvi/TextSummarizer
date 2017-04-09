@@ -1,0 +1,1 @@
+Portugal comunicou às autoridades da Bolívia que a autorização de sobrevoo e aterragem "estava cancelada por considerações técnicas".

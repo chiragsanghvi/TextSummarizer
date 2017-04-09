@@ -1,0 +1,1 @@
+Aristides Pereira, de 87 anos, estava em Portugal desde início de Agosto, tendo sido operado em Coimbra na sequência de uma fractura no colo fémur agravada pela condição de diabético.

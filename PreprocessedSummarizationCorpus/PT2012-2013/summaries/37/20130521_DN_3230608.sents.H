@@ -1,0 +1,1 @@
+Duas escolas ficaram destruídas e estão a ser retirados os alunos.

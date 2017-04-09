@@ -1,0 +1,1 @@
+A troika fez uma avaliação positiva à implementação das medidas por Portugal.

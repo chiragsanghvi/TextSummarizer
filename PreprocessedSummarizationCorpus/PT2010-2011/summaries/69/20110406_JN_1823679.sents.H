@@ -1,0 +1,1 @@
+No mesmo dia, a polícia efectuou uma busca ao seu estúdio em Caochangdi, nordeste da capital chinesa.

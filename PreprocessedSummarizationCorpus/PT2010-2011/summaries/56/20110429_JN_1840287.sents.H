@@ -1,0 +1,1 @@
+O cortejo foi composto por mais quatro carruagens e acompanhado pela multidão.

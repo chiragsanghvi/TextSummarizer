@@ -1,0 +1,1 @@
+Os cipriotas vão perder quase 10% das poupanças depositadas nos bancos de Chipre.

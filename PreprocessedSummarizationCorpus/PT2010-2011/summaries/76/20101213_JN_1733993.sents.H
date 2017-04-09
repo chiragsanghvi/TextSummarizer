@@ -1,0 +1,1 @@
+O bombista suicida é um cidadão sueco de 28 anos que viveu no Reino Unido.

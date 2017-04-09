@@ -1,0 +1,1 @@
+Tawakul Karman liderou a organização Mulheres Jornalistas sem Correntes, grupo de defesa dos direitos humanos.

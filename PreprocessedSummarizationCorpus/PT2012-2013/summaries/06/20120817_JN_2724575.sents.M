@@ -1,0 +1,1 @@
+Julian Assange pode "ficar indefinidamente" na embaixada em Londres.Se for extraditado para a Suécia, Assange diz correr o risco de nova extradição para os Estados Unidos para responder por espionagem, após a divulgação de 250 mil telegramas diplomáticos norte-americanos.

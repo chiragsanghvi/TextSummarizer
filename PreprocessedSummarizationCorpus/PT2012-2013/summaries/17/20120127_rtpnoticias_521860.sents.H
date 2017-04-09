@@ -1,0 +1,1 @@
+Os passageiros que sobreviveram vão receber 11 mil euros de indemnização, mais reembolsos.

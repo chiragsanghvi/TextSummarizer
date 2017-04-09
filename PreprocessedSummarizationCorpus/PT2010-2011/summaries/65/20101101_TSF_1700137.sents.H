@@ -1,0 +1,1 @@
+Dilma Rousseff foi eleita com 56 por cento dos votos e tornou-se a primeira mulher presidente do Brasil.No discurso de vitória, emocionou-se quando agradeceu ao Presidente Lula da Silva.José Serra do Partido da Social Democracia Brasileira obteve 43,95 por cento.

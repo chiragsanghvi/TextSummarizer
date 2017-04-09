@@ -1,0 +1,1 @@
+Ricky Martin é pai de dois gémeos, de uma mãe de aluguer.

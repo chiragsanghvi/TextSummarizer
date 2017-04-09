@@ -1,0 +1,1 @@
+O ADN retirado do corpo de uma das pessoas corresponde ao do líder da al-Qaeda.

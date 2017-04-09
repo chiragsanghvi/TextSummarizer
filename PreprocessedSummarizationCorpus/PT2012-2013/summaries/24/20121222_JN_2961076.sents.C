@@ -1,0 +1,1 @@
+O autor do massacre terá sabido que a mãe o queria internar num hospital psiquiátrico.

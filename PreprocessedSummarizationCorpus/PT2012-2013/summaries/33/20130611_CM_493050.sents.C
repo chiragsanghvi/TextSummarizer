@@ -1,0 +1,1 @@
+Os trabalhadores serão despedidos e indemnizados e poderão candidatar-se a um posto na nova organização.

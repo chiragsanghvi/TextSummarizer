@@ -1,0 +1,1 @@
+A massa da nova partícula descoberta é de 125,3 GeV, cerca de 133 vezes a massa de um protão.

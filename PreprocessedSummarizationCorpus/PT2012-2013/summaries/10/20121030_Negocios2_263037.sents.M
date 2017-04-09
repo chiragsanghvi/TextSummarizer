@@ -1,0 +1,1 @@
+Barack Obama declarou hoje o estado de "grande catástrofe" no estado de Nova Iorque na sequência da tempestade "Sandy", que inundou a baixa de Manhattan e deixou meio milhão sem electricidade.

@@ -1,0 +1,3 @@
+A equipa de futebol do Togo foi alvo de um ataque perpetrado pelas forças separatistas de Cabinda quando entrava no enclave pela fronteira com o Congo para participar na Taça das Nações Africanas 2010 (CAN2010).
+O ataque, reivindicado pela Frente para a Libertação do Enclave de Cabinda (FLEC), causou a morte ao condutor do autocarro, de origem angolana, e a dois membros da delegação togolesa, tendo outros seis ficado feridos.
+O avião que deverá transportar a selecção está no aeroporto de Cabinda, onde aterrou depois de conhecida a decisão do governo togolês em retirar a equipa da CAN2010.

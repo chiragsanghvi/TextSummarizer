@@ -1,0 +1,1 @@
+O porta-voz do Vaticano criticou as notícias que falam de intrigas na Santa Sé.

@@ -1,0 +1,1 @@
+O Banco do Japão fez a maior injecção de liquidez da história para contrariar os efeitos do terramoto.

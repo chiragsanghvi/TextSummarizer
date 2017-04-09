@@ -1,0 +1,1 @@
+Até às eleições, o presidente do Tribunal Constitucional, Adly Mansour, vai dirigir o Egípto.

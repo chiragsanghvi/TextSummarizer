@@ -1,0 +1,1 @@
+Israel atacou uma frota humanitária internacional pró-palestiniana que se dirigia a Gaza, numa acção militar em que morreram oito activistas turcos e um cidadão norte-americano.Israel argumenta que o bloqueio impede a entrada de armas e munições que poderiam ser usadas para atacar Israel.

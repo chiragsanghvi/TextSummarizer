@@ -1,0 +1,1 @@
+Pelo menos 42 pessoas morreram e 300 ficaram feridas em confrontos entre a polícia e as forças armadas e apoiantes do presidente deposto.Morsi foi o primeiro presidente eleito democraticamente, mas esteve apenas um ano no poder, acusado de favorecer o setor islamita da sociedade e não concretizar reformas defendidas durante a revolução de 2011.

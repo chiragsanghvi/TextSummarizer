@@ -1,0 +1,1 @@
+Mais de 700 pessoas foram detidas durante uma manifestação do movimento ‘Occupy Wall Street’.A marcha reuniu cerca de 3000 pessoas em Zaccotti Park, próximo de Wall Street, onde organizadores do movimento contra o excesso de poder da Banca e dos mercados financeiros querem reunir 20 mil manifestantes "durante meses".

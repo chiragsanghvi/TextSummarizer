@@ -1,0 +1,1 @@
+Um desmoronamento na mina de São José, a mais de 800 quilómetros de Santiago do Chile, deixa 33 mineiros presos.

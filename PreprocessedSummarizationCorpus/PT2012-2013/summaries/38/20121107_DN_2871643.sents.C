@@ -1,0 +1,1 @@
+O projeto de lei que autoriza o casamento e a adoção a casais homossexuais foi aprovado pelo Conselho de Ministros.O Governo aprovou o casamento homossexual apesar da oposição conservadora e da Igreja Católica.

@@ -1,0 +1,1 @@
+Tem como arguidos os ex-sócios da empresa Smith & Pedro, Charles Smith e Manuel Pedro, acusados de tentativa de extorsão.

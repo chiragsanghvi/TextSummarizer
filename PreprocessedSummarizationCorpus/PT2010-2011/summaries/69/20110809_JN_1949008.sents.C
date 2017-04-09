@@ -1,0 +1,1 @@
+O artista quebrou o silêncio e denunciou, através de Twitter, alegadas detenções ilegais e torturas de amigos.Ai Weiwei acordara com as autoridades que não abandonaria Pequim nem divulgaria opiniões através da Internet.

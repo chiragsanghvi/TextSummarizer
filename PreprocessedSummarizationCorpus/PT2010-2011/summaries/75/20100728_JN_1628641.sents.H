@@ -1,0 +1,1 @@
+O parlamento da Catalunha proibiu corridas de touros naquela região de Espanha.

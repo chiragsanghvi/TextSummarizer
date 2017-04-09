@@ -1,0 +1,1 @@
+O presidente da União Ciclista Internacional diz que a confissão foi «um passo importante para reparar o dano que causou ao ciclismo».

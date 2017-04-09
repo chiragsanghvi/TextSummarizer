@@ -1,0 +1,1 @@
+Em alternativa a uma assistência directa a Atenas, Berlim preconiza "uma participação financeira do Fundo Monetário Internacional".

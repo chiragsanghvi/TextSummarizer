@@ -1,0 +1,1 @@
+A detenção secreta desencadeou vários protestos nas capitais ocidentais e nos meios culturais estrangeiros.

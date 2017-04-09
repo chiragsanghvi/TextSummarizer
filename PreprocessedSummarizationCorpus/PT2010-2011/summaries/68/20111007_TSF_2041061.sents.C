@@ -1,0 +1,1 @@
+Leymah Gbowee organizou um grupo de mulheres cristãs e muçulmanas para desafiar os senhores da guerra na Libéria.

@@ -1,0 +1,1 @@
+A data representa o fim de um ciclo no calendário maia, que começou no ano 3114 antes de Cristo.

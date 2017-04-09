@@ -1,0 +1,1 @@
+Mohamed Morsi foi declarado vencedor das eleições presidenciais no Egito.

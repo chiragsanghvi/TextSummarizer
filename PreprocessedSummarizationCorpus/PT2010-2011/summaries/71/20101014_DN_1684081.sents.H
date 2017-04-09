@@ -1,0 +1,1 @@
+69 dias depois, o primeiro mineiro chegou a terra.O estado de saúde dos mineiros é satisfatório.

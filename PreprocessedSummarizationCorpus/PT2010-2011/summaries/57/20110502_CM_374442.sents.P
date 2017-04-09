@@ -1,0 +1,1 @@
+Os militares apoderaram-se do corpo do terrorista, que foi enviado para o porta-aviões norte-americano Carl Vinson, no Golfo Arábico.

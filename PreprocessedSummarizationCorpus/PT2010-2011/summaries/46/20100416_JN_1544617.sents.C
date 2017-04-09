@@ -1,0 +1,1 @@
+Nove países da Europa encerraram o espaço aéreo na sequência da nuvem de cinzas vulcânicas vinda da Islândia.

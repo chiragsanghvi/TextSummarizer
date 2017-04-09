@@ -1,0 +1,1 @@
+A ordem partiu do antigo presidente Lula da Silva.

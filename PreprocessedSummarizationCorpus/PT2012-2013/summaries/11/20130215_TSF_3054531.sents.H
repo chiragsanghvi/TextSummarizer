@@ -1,0 +1,1 @@
+O ministério russo para as Situações de Emergência enviou para o local 20 mil homens.

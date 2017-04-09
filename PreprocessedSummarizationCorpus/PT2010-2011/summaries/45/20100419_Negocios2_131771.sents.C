@@ -1,0 +1,1 @@
+O Estado português vai financiar 740 milhões de euros da reconstrução da Madeira, que vai custar mais de mil milhões de euros.

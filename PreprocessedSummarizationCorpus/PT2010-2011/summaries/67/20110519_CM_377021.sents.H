@@ -1,0 +1,1 @@
+Strauss-Kahn toma a decisão para proteger a instituição, mas também porque pretende dedicar o seu esforço à prova da sua inocência.

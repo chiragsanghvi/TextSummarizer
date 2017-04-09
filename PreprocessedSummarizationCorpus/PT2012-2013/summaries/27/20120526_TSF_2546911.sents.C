@@ -1,0 +1,1 @@
+O Vaticano confirmou a detenção e a identidade do mordomo do papa Bento XVI, um dos presumíveis autores do desvio de documentos confidenciais.

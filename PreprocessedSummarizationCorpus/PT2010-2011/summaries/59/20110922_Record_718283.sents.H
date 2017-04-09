@@ -1,0 +1,1 @@
+Em setembro de 2010 já tinha sido internado nos HUC devido a uma fratura idêntica, do lado direito, tendo-lhe sido colocada uma prótese.

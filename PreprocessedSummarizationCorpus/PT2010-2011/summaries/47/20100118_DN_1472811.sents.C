@@ -1,0 +1,1 @@
+Depois do terramoto de 7.0 graus na escala de Richter que devastou a capital, o Governo haitiano decretou estado de emergência e 30 dias de luto nacional.

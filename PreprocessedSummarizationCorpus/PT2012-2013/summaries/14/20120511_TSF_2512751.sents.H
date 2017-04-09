@@ -1,0 +1,1 @@
+O Presidente da República, Aníbal Cavaco Silva, lamentou a morte do compositor e intérprete Bernardo Sassetti.

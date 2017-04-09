@@ -1,0 +1,1 @@
+O Curiosity foi lançado no dia 26 de novembro de 2011, tendo chegado à cratera Gale, na superfície de Marte.

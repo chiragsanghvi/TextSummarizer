@@ -1,0 +1,1 @@
+O Governo grego anunciou o encerramento da televisão e rádio pública, ERT, o que vai levar ao despedimento de 2.700 pessoas.

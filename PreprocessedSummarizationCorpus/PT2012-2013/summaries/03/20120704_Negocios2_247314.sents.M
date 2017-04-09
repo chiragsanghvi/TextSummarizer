@@ -1,0 +1,1 @@
+O Organização Europeia para Pesquisa Nuclear (CERN) anunciou hoje que descobriu uma partícula nova que pode ser o bosão de Higgs.

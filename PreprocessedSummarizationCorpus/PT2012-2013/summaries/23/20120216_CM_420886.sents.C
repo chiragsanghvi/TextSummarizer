@@ -1,0 +1,1 @@
+As autoridades dizem que o incêndio terá tido origem num curto-circuito ou num fogo ateado por um recluso a um colchão.

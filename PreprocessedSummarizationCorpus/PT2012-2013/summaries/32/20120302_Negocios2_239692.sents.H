@@ -1,0 +1,1 @@
+O Facebook contratou o Deutsche Bank, o Crédit Suisse e o Citigroup para efectuarem a IPO, no valor de 5 mil milhões de dólares.

@@ -1,0 +1,1 @@
+Um avião com 96 pessoas a bordo, entre os quais o Presidente da Polónia, despenhou-se no Oeste da Rússia quando tentava aterrar no aeroporto de Smolensk, 400 quilómetros a oeste de Moscovo.

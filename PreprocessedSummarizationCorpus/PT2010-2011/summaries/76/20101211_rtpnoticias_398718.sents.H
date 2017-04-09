@@ -1,0 +1,1 @@
+Duas explosões no centro de Estocolmo fizeram um morto e dois feridos.Um carro explodiu numa das ruas da capital e pouco depois outro rebentamento foi sentido perto do local.

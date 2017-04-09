@@ -1,0 +1,1 @@
+A guerra civil já causou, desde março de 2011, mais de 90 mil mortos.

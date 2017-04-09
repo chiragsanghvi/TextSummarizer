@@ -1,0 +1,1 @@
+Um carro explodiu numa das ruas da capital e pouco depois outro rebentamento foi sentido perto do local.Antes das explosões foram recebidas mensagens ameaçadoras, algumas em árabe.

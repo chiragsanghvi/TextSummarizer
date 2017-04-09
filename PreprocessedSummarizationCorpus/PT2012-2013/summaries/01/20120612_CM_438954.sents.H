@@ -1,0 +1,1 @@
+Na base do processo Freeport esteve o alegado financiamento de partidos políticos para alteração da Zona de Protecção Especial do Estuário do Tejo.

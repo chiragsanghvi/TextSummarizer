@@ -1,0 +1,1 @@
+O papa Bento XVI, 85 anos, anunciou a resignação, a partir do dia 28 de fevereiro, devido "à idade avançada".

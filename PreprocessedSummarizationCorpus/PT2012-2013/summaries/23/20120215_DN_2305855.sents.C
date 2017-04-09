@@ -1,0 +1,1 @@
+Os serviços prisionais hondurenhos dizem que o incêndio numa prisão de Comayagua terá causado a morte a pelo menos 350 pessoas.

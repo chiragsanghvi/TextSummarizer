@@ -1,0 +1,1 @@
+O músico Bernardo Sassetti morreu aos 41 anos.Nascido em Lisboa a 24 de junho de 1970, Sassetti era bisneto de Sidónio Paes e sobrinho-neto do compositor Luís de Freitas Branco.

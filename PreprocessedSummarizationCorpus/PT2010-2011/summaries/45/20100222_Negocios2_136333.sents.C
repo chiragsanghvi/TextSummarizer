@@ -1,0 +1,1 @@
+O temporal que assolou a Madeira provocou deslizamentos de terras e inundações.É considerado o pior temporal nesta região desde 1993.32 pessoas permanecem desaparecidas e 370 estão desalojadas.

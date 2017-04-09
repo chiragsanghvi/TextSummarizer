@@ -1,0 +1,1 @@
+A justiça determinou que vai ficar detido em isolamento total até 22 de Agosto.

@@ -1,0 +1,1 @@
+O irmão apoia a decisão de assumir a homossexualidade.

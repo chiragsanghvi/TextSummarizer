@@ -1,0 +1,1 @@
+José Sócrates pediu a demissão

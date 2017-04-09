@@ -1,0 +1,1 @@
+O corpo foi encontrado pela Polícia Marítima, na zona do Abano, no Guincho.Casado com a atriz Beatriz Batarda, Sassetti tinha duas filhas.

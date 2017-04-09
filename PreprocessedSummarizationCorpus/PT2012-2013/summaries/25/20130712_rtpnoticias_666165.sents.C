@@ -1,0 +1,1 @@
+Edward Snowden pediu asilo à Rússia e sujeitou-se à condição colocada por Moscovo - a suspensão de publicações comprometedoras para os serviços secretos norte-americanos.

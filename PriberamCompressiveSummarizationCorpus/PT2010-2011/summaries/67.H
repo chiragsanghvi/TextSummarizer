@@ -1,0 +1,4 @@
+O diretor geral do FMI, Dominique Strauss-Kahn, apresentou a demissão do cargo, mas nega as acusações de violação e agressão sexual.
+Strauss-Kahn toma a decisão para proteger a instituição, mas também porque pretende dedicar o seu esforço à prova da sua inocência.
+Desde que foi detido em Nova Iorque, sob a acusação de sete crimes de violação e agressão sexual a uma empregada do hotel, tem crescido a pressão para a saída de Strauss-Kahn, principal rival de Sarkozy na corrida a presidência francesa.
+A ministra das Finanças francesa, Christine  Lagarde, é uma das favoritas à sucessão na presidência do FMI.

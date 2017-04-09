@@ -1,0 +1,1 @@
+O sismo é a maior catástrofe a atingir o Haiti no últimos 200 anos.

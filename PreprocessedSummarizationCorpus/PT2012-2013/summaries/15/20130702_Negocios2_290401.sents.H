@@ -1,0 +1,1 @@
+Paulo Portas apresentou a sua demissão do Governo.Escolha de Maria Luís Albuquerque para o Ministério das Finanças foi a gota de água.

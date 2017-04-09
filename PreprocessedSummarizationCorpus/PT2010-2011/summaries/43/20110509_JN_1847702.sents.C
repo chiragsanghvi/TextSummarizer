@@ -1,0 +1,1 @@
+A Tokyo Electric Power detectou níveis de radioactividade 130 vezes acima do normal no solo da central nuclear de Fukushima.

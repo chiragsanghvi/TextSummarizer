@@ -1,0 +1,1 @@
+O Equador concedeu asilo político a Julian Assange.

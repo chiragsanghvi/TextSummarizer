@@ -1,0 +1,1 @@
+Os militares suspenderam a Constituição e dissolveram o parlamento.

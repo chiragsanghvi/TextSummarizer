@@ -1,0 +1,1 @@
+Os militares ficarão responsáveis pela distribuição de ajuda e prevenção de pilhagens.

@@ -1,0 +1,1 @@
+O conceito estratégico da Aliança Atlântica foi aprovado pelos 28 estados-membros.

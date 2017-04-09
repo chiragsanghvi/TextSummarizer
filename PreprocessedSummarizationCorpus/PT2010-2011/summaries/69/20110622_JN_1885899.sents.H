@@ -1,0 +1,1 @@
+Ai Weiwei, contestatário do regime comunista há anos, foi detido a 3 de Abril em Pequim, quando tentava embarcar para Hong Kong.A detenção desencadeou vários protestos nas capitais ocidentais e nos meios culturais estrangeiros.

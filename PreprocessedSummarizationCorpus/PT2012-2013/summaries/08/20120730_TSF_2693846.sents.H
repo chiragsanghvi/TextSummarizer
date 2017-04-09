@@ -1,0 +1,1 @@
+O "apagão" paralisou o metro de Nova Deli, os transportes ferroviários e o funcionamento dos hospitais.

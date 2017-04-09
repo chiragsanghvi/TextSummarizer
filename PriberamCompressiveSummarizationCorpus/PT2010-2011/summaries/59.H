@@ -1,0 +1,4 @@
+Aristides Pereira, o primeiro Presidente da República de Cabo Verde, morreu nos Hospitais da Universidade de Coimbra.
+Aristides Pereira, de 87 anos, estava em Portugal desde início de Agosto, tendo sido operado em Coimbra na sequência de uma fractura no colo fémur agravada pela condição de diabético.
+Em setembro de 2010 já tinha sido internado nos HUC devido a uma fratura idêntica, do lado direito, tendo-lhe sido colocada uma prótese.
+Aristides Pereira foi uma figura histórica dos movimentos de libertação africanos, tendo fundador do PAIGC (Partido Africano para a Independência da Guiné e Cabo Verde), ao lado de Amílcar Cabral.

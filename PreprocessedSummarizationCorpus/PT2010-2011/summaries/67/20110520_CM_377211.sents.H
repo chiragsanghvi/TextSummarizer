@@ -1,0 +1,1 @@
+A ministra das Finanças francesa, Christine  Lagarde, é uma das favoritas à sucessão na presidência do FMI.

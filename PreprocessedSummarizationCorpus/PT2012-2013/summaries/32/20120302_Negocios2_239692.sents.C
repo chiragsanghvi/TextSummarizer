@@ -1,0 +1,1 @@
+A empresa contratou o Deutsche Bank, o Citigroup e o Crédit Suisse para realizarem a IPO, no valor de 5 mil milhões de dólares.

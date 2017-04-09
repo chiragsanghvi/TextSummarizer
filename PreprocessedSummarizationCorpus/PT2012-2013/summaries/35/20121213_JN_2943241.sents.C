@@ -1,0 +1,1 @@
+A profecia está a ser levada demasiado a sério na Rússia.

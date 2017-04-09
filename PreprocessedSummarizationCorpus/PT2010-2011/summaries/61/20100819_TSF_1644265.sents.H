@@ -1,0 +1,1 @@
+As últimas tropas saíram do Iraque, restando agora 56 mil soldados que vão treinar o exército e polícia iraquianos.

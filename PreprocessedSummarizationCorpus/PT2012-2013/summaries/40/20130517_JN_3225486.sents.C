@@ -1,0 +1,1 @@
+O parlamento aprovou um projeto de lei do PS para que os homossexuais possam co-adotar os filhos adotivos ou biológicos da pessoa com quem estão casados ou com quem vivem em união de facto.Votaram a favor BE, PCP, PEV, a maioria dos deputados do PS e 16 deputados do PSD.
