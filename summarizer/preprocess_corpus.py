@@ -1,9 +1,14 @@
+# Creates directory structure with two folders: one for documents, another for summaries.
+# For each document, checks if there exists a summary for it.
+# If there exists a summary for the document,
+# put document in the docs folder and its corresponding summary in the summaries folder
 import os
 from shutil import copyfile
 from collections import Counter
 
 
 def counterSubset(list1, list2):
+    """ Check if all elements in list1 exist in list2 (in the same or more amount) """
     c1, c2 = Counter(list1), Counter(list2)
     for k, n in c1.items():
         if n > c2[k]:
@@ -57,7 +62,7 @@ for data_folder in ["PT2010-2011", "PT2012-2013"]:
         path_to_doc_folder = os.path.join(path_to_folder, docs_folder, doc)
 
         for file in os.listdir(path_to_doc_folder):
-            if file.endswith(".sents"):
+            if file.endswith(".sents"): # use only files that end with .sents - the rest of files are duplications of these
                 path_to_doc_file = os.path.join(path_to_doc_folder, file)
 
                 with open(path_to_doc_file, "rb") as f_doc:
@@ -77,8 +82,10 @@ for data_folder in ["PT2010-2011", "PT2012-2013"]:
                             new_path_to_doc_file = os.path.join(new_path_to_doc_folder, file)
                             new_path_to_summary_file = os.path.join(new_path_to_summary_folder, file + "." + annotator_id)
 
+                            # if there exists a summary for this doc, include doc in the folder of docs with summary
                             if not os.path.isfile(new_path_to_doc_file):
                                 copyfile(path_to_doc_file, new_path_to_doc_file)
 
-                            with open(new_path_to_summary_file, "a+") as f_doc_sum:
+                            # save summary of doc to folder with summaries
+                            with open(new_path_to_summary_file, "a+") as f_doc_sum: #need to append as there are docs with two sentences of summary
                                 f_doc_sum.write(sum_original_lines[index_line])
