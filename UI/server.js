@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
 const fs = require('fs');
-
+const path = require('path');
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '/views'));
 app.use(cookieParser());
 
 // List all files in a directory in Node.js recursively in a synchronous fashion
@@ -27,7 +28,7 @@ var walkSync = function(dir) {
 var satisfyRequest = function(req, res, language) {
 
 	var experimentId = (language == "Portuguese") ? "155113384972518187" : "155113393118904924";
-	var documents = walkSync(__dirname + "/" + language + "/documents");
+	var documents = walkSync(__dirname + "/../" + language + "/documents");
 	var docsRated = req.cookies['docsRated'];
 
 	if (!docsRated ||  docsRated == "") docsRated = [];
@@ -38,7 +39,7 @@ var satisfyRequest = function(req, res, language) {
 	for(var i = 0;i< documents.length; i++) {
 		if (docsRated.indexOf(documents[i]) == -1) {
 			docName = documents[i];
-			sumDocName = docName.replace(".txt", "_pageRank.txt");
+			sumDocName = docName + "_pageRank";
 			break;
 		}	
 	}
@@ -48,12 +49,12 @@ var satisfyRequest = function(req, res, language) {
 		return;
 	}
 
- 	fs.readFile(language + '/documents/' + docName, 'utf-8', function(err, doc) {
+ 	fs.readFile(__dirname + "/../"  + language + '/documents/' + docName, 'utf-8', function(err, doc) {
  		if (err) {
 			res.send("Error fetching document " + docName);
 			return;
 		}
- 		fs.readFile(language + '/summaries/' + sumDocName, 'utf-8', function(err, summary) {
+ 		fs.readFile(__dirname + "/../" + language + '/summaries/' + sumDocName, 'utf-8', function(err, summary) {
  			if (err) {
  				res.send("Error fetching summary for document " + docName);
  				return;
@@ -70,6 +71,10 @@ app.get('/marathi', (req, res) => {
 
 app.get('/portuguese', (req, res) => {
 	satisfyRequest(req, res, 'Portuguese');
+});
+
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(process.env.PORT || 5000, function() {
