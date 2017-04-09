@@ -38,9 +38,7 @@ var experimentIds = {
 	}
 }
 
-var satisfyRequest = function(req, res, language, algorithm) {
-
-	var experimentId = experimentIds[language][algorithm];
+var satisfyRequest = function(req, res, language) {
 
 	var documents = walkSync(__dirname + "/../" + language + "/summaries");
 	var docsRated = req.cookies['docsRated'];
@@ -51,18 +49,22 @@ var satisfyRequest = function(req, res, language, algorithm) {
 	var docName, sumDocName;
 
 	for(var i = 0;i< documents.length; i++) {
-		if ((documents[i].indexOf(algorithm) != -1) && docsRated.indexOf(documents[i]) == -1) {
+		if (docsRated.indexOf(documents[i]) == -1) {
 			sumDocName = documents[i];
+			var split = sumDocName.split('_');
+			algorithm = split[split.length - 1];
 			docName = sumDocName.replace("_" + algorithm, "");
 			break;
 		}	
 	}
-	
+
 	if (!docName) {
 		res.send("No more documents to rate. Come back later");
 		return;
 	}
 
+	var experimentId = experimentIds[language][algorithm];
+	
  	fs.readFile(__dirname + "/../"  + language + '/summaries/' + sumDocName, 'utf-8', function(err, summary) {
  		if (err) {
 			res.send("Error fetching summary for  document " + sumDocName + "\n" + err.message);
@@ -89,33 +91,11 @@ var satisfyRequest = function(req, res, language, algorithm) {
 };
 
 app.get('/marathi', (req, res) => {
-	satisfyRequest(req, res, 'Marathi', 'PageRankSummarizer');
-});
-
-
-
-app.get('/Portuguese/LexRankSummarizer', (req, res) => {
-	satisfyRequest(req, res, 'Portuguese', 'LexRankSummarizer');
-});
-
-app.get('/Portuguese/LuhnSummarizer', (req, res) => {
-	satisfyRequest(req, res, 'Portuguese', 'LuhnSummarizer');
-});
-
-app.get('/Portuguese/LsaSummarizer', (req, res) => {
-	satisfyRequest(req, res, 'Portuguese', 'LsaSummarizer');
-});
-
-app.get('/Portuguese/SumBasicSummarizer', (req, res) => {
-	satisfyRequest(req, res, 'Portuguese', 'SumBasicSummarizer');
-});
-
-app.get('/Portuguese/TextRankSummarizer', (req, res) => {
-	satisfyRequest(req, res, 'Portuguese', 'TextRankSummarizer');
+	satisfyRequest(req, res, 'Marathi');
 });
 
 app.get('/Portuguese', (req, res) => {
-	satisfyRequest(req, res, 'Portuguese', 'TextRankSummarizer');
+	satisfyRequest(req, res, 'Portuguese');
 });
 
 app.get('*', (req, res) => {
