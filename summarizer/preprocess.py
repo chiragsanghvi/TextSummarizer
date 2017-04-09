@@ -3,7 +3,8 @@ from __future__ import print_function
 from __future__ import print_function
 from __future__ import print_function
 from __future__ import unicode_literals
-import io, nltk, numpy, copy, collections, re, sys
+from collections import defaultdict
+import io, nltk, numpy, copy, collections, re, sys, json
 from nltk.tokenize import sent_tokenize
 
 # import sumy
@@ -13,6 +14,54 @@ stopwords = set()
 sentences = []
 sentences_processing = []
 sentence_dictionary = collections.defaultdict(dict)
+stemWords = {}
+
+def readStemWords():
+    global stemWords
+
+    with io.open("word_list_marathi.txt", encoding='utf-8') as textFile:
+        index = 0
+        for line in textFile:
+            line = line.strip()
+            if len(line) > 0:
+                index += 1
+                wordEndIndex = line.find(">")
+                word = line[2:wordEndIndex]
+
+
+
+                line = line[wordEndIndex + 1:]
+                baseEndIndex = line.find("]")
+                base = line[1:baseEndIndex].strip()
+                line = line[baseEndIndex + 1:]
+                stem = None
+
+                # If there is a stem word for the same
+                if len(base) >= 0:
+                    stemEndIndex = base.find('-')
+                    if stemEndIndex > 0:
+                        stem = base[:stemEndIndex]
+
+                valid = line[line.find("(")+ 1: line.find(")")].strip()
+
+                if valid == "0":
+                    continue
+
+                line = line[line.find("{") + 1: line.find("}")].strip()
+                related = []
+
+                if len(line) > 0:
+                    split = line.split(",")
+                    for s in split:
+                        related.append(s[:s.find("|")])
+
+                if stem == None and len(related) > 0:
+                    stem = related[0]
+
+                if stem != None:
+                    stemWords[word] = {}
+                    stemWords[word]["stem"] = stem
+                    stemWords[word]["related"] = related
 
 
 def tokenize(filename):
@@ -36,7 +85,7 @@ def tokenize(filename):
         # sentence = re.sub(r'[^\w\s]', ' ', sentence)
         tokens = sentence.strip().split()
         actualTokens = removeStopWords(tokens)
-        stemmedTokens = stemmer_mar(actualTokens)
+        stemmedTokens = stemmerMarathi(actualTokens)
         sentence_dictionary[counter] = stemmedTokens
         counter += 1
 
@@ -142,6 +191,15 @@ def remove_case(word):
 
 
 def remove_No_Gender(word):
+
+    global stemWords
+
+    orig = word
+
+    if word in stemWords:
+        #print("From word - " + word + " : "  + stemWords[word]["stem"])
+        return stemWords[word]["stem"]
+
     word_length = len(word) - 1
     if word_length > 5:
         suffix = " ुरडा"
@@ -232,14 +290,17 @@ def remove_No_Gender(word):
         suffix = "त"
         if word.endswith(suffix):
             return word[:-len(suffix)]
+
+    #print("From stemmer - " + orig + " : " + word)
+
     return word
 
 
-def stemmer_mar(words):
+def stemmerMarathi(words):
     return [remove_No_Gender(remove_case(word)) for word in words]
 
-def cleanText(filename = "input.txt"):
-    global sentence_dictionary
+def cleanText(filename):
+    global sentence_dictionary, sentences
     readStopWords()
     tokenize(filename)
     # print("after removing stopwords")
@@ -248,6 +309,7 @@ def cleanText(filename = "input.txt"):
         # print(" ".join(sentence_dictionary[i]))
         size += len(sentence_dictionary[i])
     # print (size)
-    return sentence_dictionary, size
+    return sentence_dictionary,sentences, size
 
-cleanText()
+readStemWords()
+cleanText(sys.argv[1])
