@@ -1,4 +1,4 @@
-# AUTOMATED TEXT SUMMARIZATION IN MARATHI
+# AUTOMATED TEXT SUMMARIZATION IN MARATHI (AND PORTUGUESE)
 
 ```
 
@@ -25,7 +25,7 @@ In future feature extraction process, the features like SOV (Subject Object Verb
 
 ## Evaluation Plan
 Qualitatively, the objective is to find a summary grammatically and semantically correct, that is relevant, and that the user can approve (as opposed to disapprove) and/or give a score which constitutes an accepted summary (as opposed to a rejected summary proposal).
-Quantitatively, the most common way to evaluate the informativeness of automatic text summaries is to compare them with human-made model summaries. These summaries will be compared with the output of our program using the ROUGE [3] metric. It considers the result of automatic text summarization and human-made summarization and computes the n-gram co-occurrence between them. 
+Quantitatively, the most common way to evaluate the informativeness of automatic text summaries is to compare them with human-made model summaries. These summaries will be compared with the output of our program using the ROUGE [3] metric. It considers the result of automatic text summarization and human-made summarization and computes the n-gram co-occurrence between them.
 
 ## Tools
 NLTK, Basic Marathi Rule based stemmer, ROUGE [3]
