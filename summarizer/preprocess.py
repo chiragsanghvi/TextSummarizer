@@ -26,10 +26,10 @@ def tokenize(filename):
     # # print data
     sentences = sent_tokenize(data)
     sentences_processing = copy.deepcopy(sentences)
-    print("using nltk")
+    # print("using nltk")
     counter = 0
     for sentence in sentences_processing:
-        print(sentence)
+        # print(sentence)
         sentence = sentence[:-1]
         # sentence = re.sub("\d+", "", sentence)
         sentence = re.sub(',|\.|-|\(|\)', ' ', sentence)
@@ -242,7 +242,7 @@ def cleanText(filename = "input.txt"):
     global sentence_dictionary
     readStopWords()
     tokenize(filename)
-    print("after removing stopwords")
+    # print("after removing stopwords")
     size = 0
     for i in range(0, len(sentence_dictionary)):
         # print(" ".join(sentence_dictionary[i]))
