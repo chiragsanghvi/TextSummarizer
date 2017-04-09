@@ -26,7 +26,7 @@ var walkSync = function(dir) {
 
 var satisfyRequest = function(req, res, language) {
 
-	var experimentId = (language == "Portuguese") ? "155113393118904924": "155113384972518187";
+	var experimentId = (language == "Portuguese") ? "155113384972518187" : "155113393118904924";
 	var documents = walkSync(__dirname + "/" + language + "/documents");
 	var docsRated = req.cookies['docsRated'];
 
