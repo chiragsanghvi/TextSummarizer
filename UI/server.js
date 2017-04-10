@@ -31,7 +31,9 @@ var walkSync = function(dir) {
       filelist.push(file);
     }
   });
-  return filelist;
+
+  
+  return filelist.reverse();
 };
 
 var experimentIds = {
