@@ -5,6 +5,8 @@ from preprocess import cleanText
 import networkx
 import itertools
 import math
+import sys
+import io
 import json
 
 sentenceDictionary = {};
@@ -29,17 +31,19 @@ def printDictionary():
         print str(key) + " : " + " ".join(sentenceDictionary[key])  
 
 
-def textRankSimilarity(summarySentenceCount):
-    fileName = "../Marathi/documents/doc1"
+def textRankSimilarity(filePath, summarySentenceCount):
     global sentenceDictionary
     sentenceDictionary = {};
     sentences = []
-    sentenceDictionary, sentences, size = cleanText(fileName)
+    sentenceDictionary, sentences, size = cleanText(filePath)
     #printDictionary()
     graph = generateGraph(list(sentenceDictionary.keys()))
     pageRank = networkx.pagerank(graph)
-    return " ".join([sentences[sentenceID] for sentenceID in sorted(pageRank, key=pageRank.get, reverse=True)[:summarySentenceCount]])
+    output = "\n".join([sentences[sentenceID] for sentenceID in sorted(pageRank, key=pageRank.get, reverse=True)[:summarySentenceCount]])
 
+    with io.open("../Marathi/summaries/" + (filePath).split('/')[-1] + "_TextRankSimilaritySummarizer", "w", encoding='utf-8') as outFile:
+        outFile.write(output)
+        outFile.close()
 
 if __name__ == "__main__":
-    print(textRankSimilarity(5))
+    textRankSimilarity(sys.argv[1], 5)
