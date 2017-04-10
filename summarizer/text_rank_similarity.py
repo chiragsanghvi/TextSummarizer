@@ -39,7 +39,7 @@ def textRankSimilarity(filePath, summarySentenceCount):
     #printDictionary()
     graph = generateGraph(list(sentenceDictionary.keys()))
     pageRank = networkx.pagerank(graph)
-    output = "\n".join([sentences[sentenceID] for sentenceID in sorted(pageRank, key=pageRank.get, reverse=True)[:summarySentenceCount]])
+    output = "\n".join([sentences[sentenceID] for sentenceID in sorted(sorted(pageRank, key=pageRank.get, reverse=True)[:summarySentenceCount])])
 
     with io.open("../Marathi/summaries/" + (filePath).split('/')[-1] + "_TextRankSimilaritySummarizer", "w", encoding='utf-8') as outFile:
         outFile.write(output)
