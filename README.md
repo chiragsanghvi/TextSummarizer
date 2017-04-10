@@ -40,14 +40,4 @@ NLTK, Basic Marathi Rule based stemmer, ROUGE [3]
 
 [4] Mihalcea, R., & Tarau, P. (2004, July). TextRank: Bringing order into texts. Association for Computational Linguistics.
 
-# Division of Work
 
-* **Corpus Preparation & Data Collection**: Chirag, Hirak, Akshay, Pablo 
-* **Background Research**: Pablo, Chirag, Hirak, Akshay
-* **Implementation:** 
-    * **Preprocessing**: Hirak, Chirag
-    * **Stemming**: Akshay, Pablo
-    * **Sentence Ranking**: Chirag, Hirak
-    * **Evaluation**: Pablo, Akshay
-* **Report**: Chirag, Hirak, Pablo, Akshay
-* **Word Count**:  534
