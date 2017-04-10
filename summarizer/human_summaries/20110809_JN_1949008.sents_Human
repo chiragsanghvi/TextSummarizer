@@ -1,0 +1,1 @@
+Ai Weiwei, libertado a 22 de Junho pelas autoridades chinesas, denunciou, através de Twitter, alegadas detenções ilegais e torturas de amigos.

@@ -1,0 +1,1 @@
+A NASA calcula que o sismo fez deslocar o eixo de rotação da Terra em oito centímetros.

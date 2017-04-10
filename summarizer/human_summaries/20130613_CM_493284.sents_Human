@@ -1,0 +1,1 @@
+Segundo o executivo, vai ser criado um novo organismo público de radiotelevisão, "com muito menos funcionários".

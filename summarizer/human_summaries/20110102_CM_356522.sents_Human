@@ -1,0 +1,1 @@
+Um atentado junto a uma igreja cristã ortodoxa copta fez pelo menos 21 mortos e mais de 70 feridos.

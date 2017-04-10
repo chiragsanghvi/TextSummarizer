@@ -1,0 +1,1 @@
+Pedro Passos Coelho garante que não se demite, que não aceitou a demissão de Paulo Portas e que quer esclarecer as condições de apoio político ao Governo de coligação.

@@ -1,0 +1,1 @@
+O Papa Francisco entrou na Praça de São Pedro no papamóvel, antes de celebrar a missa inaugural do seu pontificado diante de centenas de milhares de pessoas.

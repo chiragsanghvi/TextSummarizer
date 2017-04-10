@@ -1,0 +1,1 @@
+Os reis de Marrocos e da Jordânia procuram responder às reivindicações populares com o anúncio de reformas constitucionais.

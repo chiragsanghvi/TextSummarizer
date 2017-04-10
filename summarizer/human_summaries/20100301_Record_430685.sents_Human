@@ -1,0 +1,1 @@
+O Comité Olímpico Internacional elogiou a organização dos Jogos Olímpicos de inverno de Vancouver, que terminaram com a realização da final de hóquei no gelo masculina.

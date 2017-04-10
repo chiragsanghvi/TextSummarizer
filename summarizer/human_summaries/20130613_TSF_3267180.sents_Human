@@ -1,0 +1,1 @@
+O Governo não muda a data do exame e o ministro da Educação convocou todos os professores.

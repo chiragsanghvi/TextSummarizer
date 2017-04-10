@@ -1,0 +1,1 @@
+Até às 16h00 votaram 43,4 por cento.

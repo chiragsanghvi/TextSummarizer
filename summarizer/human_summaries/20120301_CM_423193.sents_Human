@@ -1,0 +1,1 @@
+Os passageiros resistiam, sem electricidade e comida quente, com o navio rebocado por um pesqueiro até Mahé, nas Seychelles.251 passageiros decidiram regressar aos seus países.Os restantes aceitaram prosseguir as férias nas Seychelles.

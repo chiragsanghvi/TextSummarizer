@@ -1,0 +1,1 @@
+José Saramago morreu aos 87 anos na sua residência da ilha espanhola de Lanzarote.

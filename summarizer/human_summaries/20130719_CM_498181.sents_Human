@@ -1,0 +1,1 @@
+A extradição de Edward Snowden é exigida pelos Estados Unidos, que o acusam de violar a sua lei de espionagem.

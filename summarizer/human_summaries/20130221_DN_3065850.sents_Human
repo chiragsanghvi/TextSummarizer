@@ -1,0 +1,1 @@
+Paolo Gabriele pediu perdão por ter traído o Papa, mas disse ter agido para salvar a Igreja e o Papa.

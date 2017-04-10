@@ -1,0 +1,1 @@
+O bosão de Higgs, teorizado há quase meio século pelo físico britânico Peter Higgs, era tão procurado porque, segundo o modelo padrão da física, é o responsável pela massa das outras partículas.

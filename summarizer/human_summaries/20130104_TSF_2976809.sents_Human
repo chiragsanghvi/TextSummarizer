@@ -1,0 +1,1 @@
+O presidente reeleito afirmou que, «para os Estados Unidos da América, o melhor ainda está para vir».

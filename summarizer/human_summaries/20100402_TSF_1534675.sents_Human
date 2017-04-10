@@ -1,0 +1,1 @@
+Empresas portuguesas vão aproveitar para disponibilizar aplicações para dispositivos móveis.

@@ -1,0 +1,1 @@
+A civilização maia media o tempo de forma cíclica.

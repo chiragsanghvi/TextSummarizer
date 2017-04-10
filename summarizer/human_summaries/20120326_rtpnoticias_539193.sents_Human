@@ -1,0 +1,1 @@
+Cameron, de 57 anos, realizou a viagem num mini-submarino designado "Deepsea Challenger", fabricado pela sua equipa de engenheiros em colaboração com a National Geographic.A fossa das Marianas, a quase 11 mil metros de profundidade, está situada perto da ilha de Guam, no sul do Pacífico.

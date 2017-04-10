@@ -1,0 +1,1 @@
+O acidente é um dos mais graves em Espanha e o primeiro com mortes nas linhas de alta velocidade do país.

@@ -1,0 +1,1 @@
+Leymah Gbowee organizou um grupo de mulheres para desafiar os senhores da guerra na Libéria.

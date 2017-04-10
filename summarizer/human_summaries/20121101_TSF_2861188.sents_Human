@@ -1,0 +1,1 @@
+Pelo menos 37 pessoas morreram, quase sete mil continuam em centros de acolhimento.

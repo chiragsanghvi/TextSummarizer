@@ -1,0 +1,1 @@
+O veículo transportava três alunos da Escola Básica e Secundária do Nordeste, além do motorista.O corpo do motorista foi encontrado junto aos destroços do veículo.

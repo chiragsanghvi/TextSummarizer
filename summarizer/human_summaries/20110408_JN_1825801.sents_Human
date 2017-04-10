@@ -1,0 +1,1 @@
+O sismo e tsunami gigante fizeram mais de 27 mil mortos e desaparecidos.

@@ -1,0 +1,1 @@
+As peças do acidente estão à guarda da polícia na Corunha.

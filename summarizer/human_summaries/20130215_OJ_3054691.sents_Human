@@ -1,0 +1,1 @@
+O peso do meteorito devia ser de várias toneladas.

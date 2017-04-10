@@ -1,0 +1,1 @@
+As idades oscilam entre os 62 e os 17 anos.

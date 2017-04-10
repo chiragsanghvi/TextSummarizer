@@ -1,0 +1,1 @@
+Em São Paulo, a polícia recorreu a gás lacrimogéneo e balas de borracha para dispersar os cerca de 5.000 manifestantes que protestavam contra uma subida de 7% dos preços do metro, autocarro e comboio.

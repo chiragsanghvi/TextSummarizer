@@ -1,0 +1,1 @@
+Depois das cerimónias fúnebres, em Lisboa, as cinzas ficam em Portugal.

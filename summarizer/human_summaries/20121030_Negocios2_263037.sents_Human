@@ -1,0 +1,1 @@
+O estado de grande catástrofe foi decretado para Nova Jérsia.

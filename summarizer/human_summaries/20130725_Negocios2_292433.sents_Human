@@ -1,0 +1,1 @@
+O comboio descarrilou ao fazer uma curva a 190 quilómetros por hora onde é proibido circular a mais de 80.

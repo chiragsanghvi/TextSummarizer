@@ -1,0 +1,1 @@
+Para impedir a bancarrota da Grécia, os líderes da Zona Euro aceitaram baixar os juros para 3,5 por cento a todos os que pediram ajuda.O Estado Português já recebeu quase 20 mil milhões de euros, um quarto do pacote de ajuda.

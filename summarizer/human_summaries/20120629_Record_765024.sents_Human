@@ -1,0 +1,1 @@
+Armstrong continua a dizer-se inocente e apoia-se nos mais de 500 testes negativos que efetuou ao longo da carreira.

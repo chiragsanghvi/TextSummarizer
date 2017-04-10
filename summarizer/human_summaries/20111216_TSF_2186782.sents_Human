@@ -1,0 +1,1 @@
+A "Primavera Árabe" irrompe de revoltas, que começaram a 17 de Dezembro de 2010, no Médio Oriente e Norte da África, contra regimes autoritários, que resultaram no derrube dos presidentes da Tunísia, Egipto e Líbia.

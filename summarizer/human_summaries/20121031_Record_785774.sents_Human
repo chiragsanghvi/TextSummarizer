@@ -1,0 +1,1 @@
+Por causa do 'Sandy', a campanha eleitoral para as presidenciais norte-americanas ficou suspensa, a uma semana do escrutínio.

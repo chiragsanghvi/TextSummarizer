@@ -1,0 +1,1 @@
+O espanhol Andrés Iniesta foi eleito o melhor futebolista do Euro 2012, numa lista de 23 que integra os portugueses Pepe, Cristiano Ronaldo e Fábio Coentrão.

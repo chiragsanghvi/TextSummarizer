@@ -1,0 +1,1 @@
+As autoridades encontraram o corpo da criança desaparecida na sequência do acidente com um autocarro numa ravina na ilha de São Miguel.

@@ -1,0 +1,1 @@
+Um incidente diplomático que o presidente boliviano comparou a um "sequestro" e que considerou uma "ofensa contra a Bolívia e toda a América Latina".

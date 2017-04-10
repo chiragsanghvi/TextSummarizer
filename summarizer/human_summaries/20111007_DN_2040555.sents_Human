@@ -1,0 +1,1 @@
+As laureadas elevam para 15 o número de mulheres que receberam a distinção.

@@ -1,0 +1,1 @@
+Um acerto de contas entre cartéis causou 35 mortos no estado de Guerrero, Sul do México.

@@ -1,0 +1,1 @@
+Os Estados Unidos ofereceram ajuda nos esforços de salvamento e recuperação.

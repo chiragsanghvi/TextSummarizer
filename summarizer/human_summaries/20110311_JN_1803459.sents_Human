@@ -1,0 +1,1 @@
+Um sismo de 8,9 na escala de Richter devastou o nordeste do Japão.

@@ -1,0 +1,1 @@
+O WikiLeaks divulgou nos últimos anos milhares de documentos militares sobre o Iraque e o Afeganistão e de telegramas diplomáticos norte-americanos.

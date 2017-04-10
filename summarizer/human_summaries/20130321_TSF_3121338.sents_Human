@@ -1,0 +1,1 @@
+Sem esse dinheiro, os bancos cipriotas não aguentam mais de uma semana.

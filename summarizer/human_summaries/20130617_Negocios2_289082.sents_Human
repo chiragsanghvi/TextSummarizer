@@ -1,0 +1,1 @@
+O tribunal sentenciou que a ERT deverá permanecer aberta até que se crie uma nova televisão pública.

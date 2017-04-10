@@ -1,0 +1,1 @@
+O Governo de Zapatero mostrou-se contrário à proibição, mas respeita a decisão.

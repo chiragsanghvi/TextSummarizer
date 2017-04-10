@@ -1,0 +1,1 @@
+Após a primeira explosão nenhum contacto foi estabelecido com os mineiros.Ao acidente conseguiram sobreviver dois mineiros.

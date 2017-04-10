@@ -1,0 +1,1 @@
+A União Europeia está a acelerar um plano de ajuda financeira à Grécia, que poderá passar pela compra de 25 mil milhões de euros em dívida pública.

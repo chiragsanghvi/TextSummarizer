@@ -1,0 +1,1 @@
+Nove mil milhões provêm do Mecanismo Europeu de Estabilidade e mil milhões são do Fundo Monetário Internacional.

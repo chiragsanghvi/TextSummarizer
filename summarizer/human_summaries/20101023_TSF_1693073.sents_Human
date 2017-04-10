@@ -1,0 +1,1 @@
+Os documentos começaram a ser difundidos pela imprensa internacional.

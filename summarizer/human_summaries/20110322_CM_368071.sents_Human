@@ -1,0 +1,1 @@
+Passos Coelho explica as razões para que o PSD vote contra o PEC 4.

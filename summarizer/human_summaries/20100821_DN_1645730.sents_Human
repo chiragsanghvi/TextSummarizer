@@ -1,0 +1,1 @@
+A retirada americana é fruto de um acordo entre as autoridades dos EUA e do Iraque.

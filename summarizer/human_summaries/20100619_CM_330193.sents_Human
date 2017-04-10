@@ -1,0 +1,1 @@
+José Saramago morreu aos 87 anos na sua residência da ilha espanhola de Lanzarote.O corpo de José Saramago vai ser velado no Salão Nobre da Câmara Municipal de Lisboa, saindo para Cemitério do Alto de São João, para ser cremado.

@@ -1,0 +1,1 @@
+Este foi o pior desempenho de uma cotada após o fim do bloqueio de venda das acções.
