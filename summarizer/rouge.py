@@ -16,13 +16,13 @@ for language in ["Portuguese", "Marathi"]:
     print "------------"
 
     if language == "Portuguese":
-        human_summaries_folder = os.path.join("..", "human_summaries")
-        system_summaries_folder = os.path.join("..", "generated_summaries")
+        human_summaries_folder = os.path.join("human_summaries")
+        system_summaries_folder = os.path.join("generated_summaries")
         summarizer_types = ["LexRankSummarizer", "LsaSummarizer", "LuhnSummarizer", "SumBasicSummarizer", "TextRankSummarizer"]
 
     elif language == "Marathi":
-        human_summaries_folder = os.path.join("..", "..", "Marathi", "summaries")
-        system_summaries_folder = os.path.join("..", "..", "Marathi", "summaries")
+        human_summaries_folder = os.path.join("..", "Marathi", "summaries")
+        system_summaries_folder = os.path.join("..", "Marathi", "summaries")
         summarizer_types = ["TextRankPositionalSummarizer", "TextRankSimilaritySummarizer"]
 
     for type_summarizer in summarizer_types:
