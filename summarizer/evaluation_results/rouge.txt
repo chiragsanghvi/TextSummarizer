@@ -1,32 +1,25 @@
----------------------------------------------
-1 ROUGE-1 Average_R: 1.00000 (95%-conf.int. 1.00000 - 1.00000)
-1 ROUGE-1 Average_P: 0.44444 (95%-conf.int. 0.44444 - 0.44444)
-1 ROUGE-1 Average_F: 0.61538 (95%-conf.int. 0.61538 - 0.61538)
----------------------------------------------
-1 ROUGE-2 Average_R: 1.00000 (95%-conf.int. 1.00000 - 1.00000)
-1 ROUGE-2 Average_P: 0.42857 (95%-conf.int. 0.42857 - 0.42857)
-1 ROUGE-2 Average_F: 0.60000 (95%-conf.int. 0.60000 - 0.60000)
----------------------------------------------
-1 ROUGE-3 Average_R: 1.00000 (95%-conf.int. 1.00000 - 1.00000)
-1 ROUGE-3 Average_P: 0.41176 (95%-conf.int. 0.41176 - 0.41176)
-1 ROUGE-3 Average_F: 0.58333 (95%-conf.int. 0.58333 - 0.58333)
----------------------------------------------
-1 ROUGE-4 Average_R: 1.00000 (95%-conf.int. 1.00000 - 1.00000)
-1 ROUGE-4 Average_P: 0.39394 (95%-conf.int. 0.39394 - 0.39394)
-1 ROUGE-4 Average_F: 0.56522 (95%-conf.int. 0.56522 - 0.56522)
----------------------------------------------
-1 ROUGE-L Average_R: 1.00000 (95%-conf.int. 1.00000 - 1.00000)
-1 ROUGE-L Average_P: 0.44444 (95%-conf.int. 0.44444 - 0.44444)
-1 ROUGE-L Average_F: 0.61538 (95%-conf.int. 0.61538 - 0.61538)
----------------------------------------------
-1 ROUGE-W-1.2 Average_R: 0.57435 (95%-conf.int. 0.57435 - 0.57435)
-1 ROUGE-W-1.2 Average_P: 0.44444 (95%-conf.int. 0.44444 - 0.44444)
-1 ROUGE-W-1.2 Average_F: 0.50111 (95%-conf.int. 0.50111 - 0.50111)
----------------------------------------------
-1 ROUGE-S* Average_R: 1.00000 (95%-conf.int. 1.00000 - 1.00000)
-1 ROUGE-S* Average_P: 0.19048 (95%-conf.int. 0.19048 - 0.19048)
-1 ROUGE-S* Average_F: 0.32001 (95%-conf.int. 0.32001 - 0.32001)
----------------------------------------------
-1 ROUGE-SU* Average_R: 1.00000 (95%-conf.int. 1.00000 - 1.00000)
-1 ROUGE-SU* Average_P: 0.20301 (95%-conf.int. 0.20301 - 0.20301)
-1 ROUGE-SU* Average_F: 0.33750 (95%-conf.int. 0.33750 - 0.33750)
+PORTUGUESE
+------------
+Method: LexRankSummarizer
+Average ROUGE-2 score 0.0809459946074
+
+Method: LsaSummarizer
+Average ROUGE-2 score 0.0626749510733
+
+Method: LuhnSummarizer
+Average ROUGE-2 score 0.0997437315044
+
+Method: SumBasicSummarizer
+Average ROUGE-2 score 0.0481642859333
+
+Method: TextRankSummarizer
+Average ROUGE-2 score 0.124071186695
+
+MARATHI
+------------
+Method: TextRankPositionalSummarizer
+Average ROUGE-2 score 0.862096023829
+
+Method: TextRankSimilaritySummarizer
+Average ROUGE-2 score 0.819923184116
+
