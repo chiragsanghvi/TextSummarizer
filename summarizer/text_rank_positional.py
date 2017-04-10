@@ -66,10 +66,11 @@ def summarize(filePath, keyphrases, numberofSentences):
         sentenceScore[i] = sumKeyPhrases * positionalFeatureWeight
     sortedSentenceScores = sorted(sentenceScore.items(), key=operator.itemgetter(1),reverse=True)[:numberofSentences]
     sortedSentenceScores = sorted(sortedSentenceScores,key=operator.itemgetter(0),reverse=False)
-    # print("Summary: ")
+    print("\nSummary: ")
     summary = []
     with io.open("../Marathi/summaries/" + (filePath).split('/')[-1] + "_TextRankPositionalSummarizer", "w", encoding='utf-8') as outFile:
         for i in range(0, len(sortedSentenceScores)):
+            print(sentences[sortedSentenceScores[i][0]])
             outFile.write(sentences[sortedSentenceScores[i][0]] + "\n")
         outFile.close()
 
