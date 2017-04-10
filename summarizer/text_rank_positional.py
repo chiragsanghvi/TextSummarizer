@@ -53,17 +53,14 @@ def textrank():
     return keyphrases
 
 
-def summarize(keyphrases, numberofSentences):
+def summarize(filePath, keyphrases, numberofSentences):
     global textRank, sentenceDictionary, sentences
     sentenceScore = {}
     for i in sentenceDictionary.keys():
         position = float(i+1) / (float(len(sentences)) + 1.0)
-        # if position == 1.0:
-        #     position = 0.99
         positionalFeatureWeight = 1.0 / (math.pi * math.sqrt(position * (1.0 - position)))
         sumKeyPhrases = 0.0
         for keyphrase in keyphrases:
-            # if i in sentenceDictionary.keys():
                 if keyphrase in sentenceDictionary[i]:
                     sumKeyPhrases += textRank[keyphrase]
         sentenceScore[i] = sumKeyPhrases * positionalFeatureWeight
@@ -71,46 +68,20 @@ def summarize(keyphrases, numberofSentences):
     sortedSentenceScores = sorted(sortedSentenceScores,key=operator.itemgetter(0),reverse=False)
     # print("Summary: ")
     summary = []
-    with io.open("../Marathi/summaries/"+(sys.argv[1]).split('/')[-1]+"_summary_positional","w",encoding='utf-8') as outFile:
+    with io.open("../Marathi/summaries/" + (filePath).split('/')[-1] + "_TextRankPositionalSummarizer", "w", encoding='utf-8') as outFile:
         for i in range(0, len(sortedSentenceScores)):
-        # try:
             outFile.write(sentences[sortedSentenceScores[i][0]] + "\n")
-            # print(sentences[sortedSentenceScores[i][0]])
-        # summary.append(sentences[sortedSentenceScores[i][0]])
-        # except:
-        # return summary
-        # return summary
-
-
-        # for i in range(0, len(sentenceDictionary)):
-        #     for j in range(0, len(sentenceDictionary[i])):
+        outFile.close()
 
 
 
 window = 10
 numberofSentences = 6
-# sentenceDictionary, sentences, size = cleanText()
 nodeHash = {}
 textRank = {}
 sentenceDictionary = collections.defaultdict(dict)
-
-
-if len(sys.argv) > 1:
-    # print("file")
-    if len(sys.argv) > 3:
-        # print("positional")
-        sentenceDictionary, sentences, size = cleanText(sys.argv[1])
-        # print(len(sentenceDictionary))
-        # for i in sentenceDictionary.keys():
-            # print(" ".join(sentenceDictionary[i]))
-        window = int(sys.argv[3])
-        numberofSentences = int(sys.argv[2])
-        n = int(math.ceil(min(0.1 * size, 7 * math.log(size))))
-        generatepositionaldistribution()
-        keyphrases = textrank()
-        summarize(keyphrases, numberofSentences)
-    else:
-        print("not enough parameters")
+size = 0
+sentences = []
 # else:
 #     print("recursive")
 #     docsFolder = "/home/akshay/PycharmProjects/Marathi/documents/"
@@ -132,6 +103,22 @@ if len(sys.argv) > 1:
 #                 summarize(keyphrases, numberofSentences)
 #
 
+
+def process(arg1, arg2, arg3):
+    global window, n, numberofSentences, textRank, sentenceDictionary, size, sentences
+    if arg1 != None and arg2 != None and arg3 != None:
+        sentenceDictionary, sentences, size = cleanText(arg1)
+        window = int(arg3)
+        numberofSentences = int(arg2)
+        n = int(math.ceil(min(0.1 * size, 7 * math.log(size))))
+        generatepositionaldistribution()
+        keyphrases = textrank()
+        summarize(arg1, keyphrases, numberofSentences)
+    else:
+        print("not enough parameters")
+
+if __name__ == "__main__":
+    process(sys.argv[1], sys.argv[2], sys.argv[3])
 
 
 
