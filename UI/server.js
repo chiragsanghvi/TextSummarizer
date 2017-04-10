@@ -44,7 +44,8 @@ var experimentIds = {
 		"Human": "155177166949188379"
 	},
 	"Marathi" : {
-		"PageRankSummarizer": "155113393118904924",
+		"TextRankPositionalSummarizer": "155113393118904924",
+		"TextRankSimilaritySummarizer": "155197290024403744",
 		"Human": "155177156937384892"
 	}
 }
