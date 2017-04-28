@@ -19,7 +19,7 @@ r.system_dir = os.path.join('generated_summaries')
 r.model_dir = os.path.join('human_summaries')
 method = "TextRankSummarizer"
 r.system_filename_pattern = '(\s+)_' + method
-r.model_filename_pattern = '(\s+)_Human'
+r.model_filename_pattern = '(\s+)_Baseline'
 
 
 output = r.convert_and_evaluate()

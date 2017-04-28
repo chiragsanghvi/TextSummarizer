@@ -98,6 +98,3 @@ def cleanText(filename):
     # print (sentences)
     # print (size)
     return sentence_dictionary, sentences, size
-
-
-cleanText("/home/akshay/TextSummarizer/Portuguese/documents/20100108_Record_423946.sents")

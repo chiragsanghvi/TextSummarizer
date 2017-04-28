@@ -8,8 +8,8 @@ for root, dirs, files in os.walk(docsFolder):
         print(filename)
         os.system("python baseline.py " + (docsFolder + filename))
         print("Baseline Done")
-        os.system("python text_rank_positional.py " + (docsFolder + filename) + " 5 2")
+        os.system("python text_rank_positional_Marathi.py " + (docsFolder + filename) + " 5 2")
         print("Positional Done")
-        os.system("python text_rank_similarity.py " + (docsFolder + filename))
+        os.system("python text_rank_similarity_Marathi.py " + (docsFolder + filename))
         print("Similarity Done")
 

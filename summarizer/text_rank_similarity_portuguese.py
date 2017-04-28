@@ -41,10 +41,10 @@ def textRankSimilarity(filePath, summarySentenceCount):
     pageRank = networkx.pagerank(graph)
     output = "\n".join([sentences[sentenceID] for sentenceID in sorted(sorted(pageRank, key=pageRank.get, reverse=True)[:summarySentenceCount])])
 
-    print("\nSummary:")
-    print(output)
+    #print("\nSummary:")
+    #print(output)
 
-    with io.open("../Marathi/summaries/" + (filePath).split('/')[-1] + "_TextRankSimilaritySummarizer", "w", encoding='utf-8') as outFile:
+    with io.open("../Portuguese/summaries/" + (filePath).split('/')[-1] + "_TextRankSimilaritySummarizer", "w", encoding='utf-8') as outFile:
         outFile.write(output)
         outFile.close()
 
