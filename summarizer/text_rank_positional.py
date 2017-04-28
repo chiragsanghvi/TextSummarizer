@@ -59,7 +59,7 @@ def textrank():
 
 def summarize(filePath, keyphrases, numberofSentences):
     '''
-
+        Generates the summary and writes the summary to the file.
     :param filePath: path of file to be used for summarization.
     :param keyphrases: Extracted keyphrases
     :param numberofSentences: Number of sentences needed as a summary
@@ -89,7 +89,6 @@ def summarize(filePath, keyphrases, numberofSentences):
 
 def process(arg1, arg2, arg3):
     '''
-
     :param arg1: path to the file containing the text to be summarized
     :param arg2: Number of sentences to be extracted as summary
     :param arg3: size of the window to be used in the co-occurance relation
