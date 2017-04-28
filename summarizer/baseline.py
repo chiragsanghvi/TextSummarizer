@@ -1,6 +1,7 @@
 # coding=UTF-8
 from __future__ import division
 import re
+import sys
 
 class SummaryTool(object):
 
@@ -83,15 +84,13 @@ class SummaryTool(object):
         return best_sentence
 
     # Build the summary
-    def get_summary(self,, content, sentences_dic):
+    def get_summary(self, content, sentences_dic):
 
         # Split the content into paragraphs
         paragraphs = self.split_content_to_paragraphs(content)
 
-        # Add the title
         summary = []
-        summary.append("")
-
+        a
         # Add the best sentence from each paragraph
         for p in paragraphs:
             sentence = self.get_best_sentence(p, sentences_dic).strip()
@@ -104,7 +103,7 @@ class SummaryTool(object):
 # Main method, just run "python baseline.py docname"
 def main():
 
-    with file.open(sys.argv[1], "r") as fopen:
+    with open(sys.argv[1], "r") as fopen:
         content = fopen.read();
 
     # Create a SummaryTool object
@@ -119,9 +118,10 @@ def main():
     filename = sys.argv[1]
     filename += '_Baseline'
 
-    with file.open(filename, "w") as file:
+    with open(filename, "w") as file:
         file.write(summary);
     
+
 
 if __name__ == '__main__':
     main()
