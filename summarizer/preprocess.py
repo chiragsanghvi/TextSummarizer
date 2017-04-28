@@ -1,8 +1,11 @@
 # coding=utf-8
 from __future__ import print_function
 from __future__ import unicode_literals
-from collections import defaultdict
-import io, nltk, numpy, copy, collections, re, sys, json
+import collections
+import copy
+import io
+import nltk
+import re
 from nltk.tokenize import sent_tokenize
 
 nltk.download('punkt')
@@ -13,6 +16,9 @@ sentence_dictionary = collections.defaultdict(dict)
 stemWords = {}
 
 def readStemWords():
+    '''
+        Reads the words from the stem words list and transforms the data into usable format
+     '''
     global stemWords
     with io.open("word_list_marathi.txt", encoding='utf-8') as textFile:
         index = 0
@@ -27,29 +33,22 @@ def readStemWords():
                 base = line[1:baseEndIndex].strip()
                 line = line[baseEndIndex + 1:]
                 stem = None
-
-                # If there is a stem word for the same
                 if len(base) >= 0:
                     stemEndIndex = base.find('-')
                     if stemEndIndex > 0:
                         stem = base[:stemEndIndex]
 
                 valid = line[line.find("(")+ 1: line.find(")")].strip()
-
                 if valid == "0":
                     continue
-
                 line = line[line.find("{") + 1: line.find("}")].strip()
                 related = []
-
                 if len(line) > 0:
                     split = line.split(",")
                     for s in split:
                         related.append(s[:s.find("|")])
-
                 if stem == None and len(related) > 0:
                     stem = related[0]
-
                 if stem != None:
                     stemWords[word] = {}
                     stemWords[word]["stem"] = stem
@@ -57,24 +56,20 @@ def readStemWords():
 
 
 def tokenize(filename):
+    '''
+    Tokenizes the sentences and words
+    :param filename: path of the file containing the text to be summarized
+    '''
     global sentences, sentences_processing, sentence_dictionary
     with io.open(filename, "r", encoding="utf-8") as inputFile:
         data = inputFile.read()
-        # sentences = data.strip().split(".")
         inputFile.close()
-    # for sentence in sentences:
-    #     print sentence
-    # # print data
     sentences = sent_tokenize(data)
     sentences_processing = copy.deepcopy(sentences)
-    # print("using nltk")
     counter = 0
     for sentence in sentences_processing:
-        # print(sentence)
         sentence = sentence[:-1]
-        # sentence = re.sub("\d+", "", sentence)
         sentence = re.sub(',|\.|-|\(|\)', ' ', sentence)
-        # sentence = re.sub(r'[^\w\s]', ' ', sentence)
         tokens = sentence.strip().split()
         actualTokens = removeStopWords(tokens)
         stemmedTokens = stemmerMarathi(actualTokens)
@@ -83,6 +78,9 @@ def tokenize(filename):
 
 
 def readStopWords():
+    '''
+    Reads the stopwords from the file
+    '''
     with io.open("stopwords.txt", encoding='utf-8') as textFile:
         for line in textFile:
             words = line.lower().strip()
@@ -91,6 +89,10 @@ def readStopWords():
 
 
 def removeStopWords(wordlist):
+    '''
+    Removes the stopwords from the sentences
+    :param wordlist: list of stopwords
+    '''
     newlist = []
     for word in wordlist:
         if word not in stopwords:
@@ -99,6 +101,11 @@ def removeStopWords(wordlist):
 
 
 def removeCase(word):
+    '''
+
+    :param word: word to be reduced its stem
+    :return: stem of the word
+    '''
     word_length = len(word) - 1
     if word_length > 5:
         suffix = "शया"
@@ -183,6 +190,11 @@ def removeCase(word):
 
 
 def removeNoGender(word):
+    '''
+
+    :param word:
+    :return:
+    '''
     global stemWords
     orig = word
     if word in stemWords:
@@ -278,8 +290,6 @@ def removeNoGender(word):
         suffix = "त"
         if word.endswith(suffix):
             return word[:-len(suffix)]
-    
-    #print("From stemmer - " + orig + " : " + word)
     return word
 
 
@@ -288,17 +298,16 @@ def stemmerMarathi(words):
 
 
 def cleanText(filename):
+    '''
+        Tokenize, Remove stopwords and reduce the words to their stem
+    :param filename: path of file to be preprocessed
+    '''
     global sentence_dictionary, sentences
     readStopWords()
     tokenize(filename)
-    # print("after removing stopwords")
     size = 0
     for i in range(0, len(sentence_dictionary)):
-        # print(" ".join(sentence_dictionary[i]))
         size += len(sentence_dictionary[i])
-    # print (size)
     sentence_dictionary = {key: value for key, value in sentence_dictionary.items() if len(value)>0}
     return sentence_dictionary, sentences, size
-
 readStemWords()
-#cleanText(sys.argv[1])
