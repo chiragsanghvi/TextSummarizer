@@ -13,14 +13,15 @@ def compute_bigram_from_file(file_path):
         return compute_bigrams([text])
 
 with open(os.path.join("..", "summarizer", "evaluation_results", "rouge.txt"), "w") as f_output:
-    for language in ["Portuguese", "Marathi"]:
+    for language in ["Portuguese"]:
         print(language.upper(), file=f_output)
         print("------------", file=f_output)
 
         if language == "Portuguese":
             human_summaries_folder = os.path.join("human_summaries")
             system_summaries_folder = os.path.join("generated_summaries")
-            summarizer_types = ["LexRankSummarizer", "LsaSummarizer", "LuhnSummarizer", "SumBasicSummarizer", "TextRankSummarizer"]
+            # summarizer_types = ["LexRankSummarizer", "LsaSummarizer", "LuhnSummarizer", "SumBasicSummarizer", "TextRankSummarizer"]
+            summarizer_types = ["TextRankPositionalSummarizer", "TextRankSimilaritySummarizer"]
 
         elif language == "Marathi":
             human_summaries_folder = os.path.join("..", "Marathi", "summaries")

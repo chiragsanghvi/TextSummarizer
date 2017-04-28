@@ -1,0 +1,26 @@
+PORTUGUESE
+------------
+Method: LexRankSummarizer
+Average ROUGE-2 score 0.0809459946074
+
+Method: LsaSummarizer
+Average ROUGE-2 score 0.0626749510733
+
+Method: LuhnSummarizer
+Average ROUGE-2 score 0.0997437315044
+
+Method: SumBasicSummarizer
+Average ROUGE-2 score 0.0481642859333
+
+Method: TextRankSummarizer
+Average ROUGE-2 score 0.124071186695
+
+
+MARATHI
+------------
+Method: TextRankPositionalSummarizer
+Average ROUGE-2 score 0.862096023829
+
+Method: TextRankSimilaritySummarizer
+Average ROUGE-2 score 0.819923184116
+
