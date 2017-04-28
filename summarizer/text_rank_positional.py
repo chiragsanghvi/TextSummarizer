@@ -1,14 +1,11 @@
 # coding=utf-8
 from __future__ import print_function
 import collections
-import os
-
 import io
-import networkx as nx
 import math
 import operator
-
 import sys
+import networkx as nx
 
 from preprocess import cleanText
 
@@ -19,20 +16,19 @@ def generatepositionaldistribution():
     count = 0
     for i in sentenceDictionary.keys():
         # print(len(sentenceDictionary))
-        for j in range(0,len(sentenceDictionary[i])):
+        for j in range(0, len(sentenceDictionary[i])):
             count += 1
-            position = float(count)/(float(size) + 1.0)
-            positional_dictionary[i][j] = 1.0/(math.pi*math.sqrt(position*(1-position)))
+            position = float(count) / (float(size) + 1.0)
+            positional_dictionary[i][j] = 1.0 / (math.pi * math.sqrt(position * (1 - position)))
             word = sentenceDictionary[i][j]
             if word in nodeHash:
                 if nodeHash[word] < positional_dictionary[i][j]:
                     nodeHash[word] = positional_dictionary[i][j]
             else:
                 nodeHash[word] = positional_dictionary[i][j]
-    # print(positional_dictionary)
-    # for key in nodeHash:
-        # print(key + ": " + str(nodeHash[key]))
-
+                # print(positional_dictionary)
+                # for key in nodeHash:
+                # print(key + ": " + str(nodeHash[key]))
 
 
 def textrank():
@@ -42,11 +38,11 @@ def textrank():
     for i in sentenceDictionary.keys():
         for j in range(0, len(sentenceDictionary[i])):
             current_word = sentenceDictionary[i][j]
-            next_words = sentenceDictionary[i][j+1:j+window]
+            next_words = sentenceDictionary[i][j + 1:j + window]
             for word in next_words:
-                graph.add_edge(current_word,word,weight=(nodeHash[current_word]+nodeHash[word])/2)
-    textRank = nx.pagerank(graph,weight='weight')
-    keyphrases = sorted(textRank, key=textRank.get,reverse=True)[:n]
+                graph.add_edge(current_word, word, weight=(nodeHash[current_word] + nodeHash[word]) / 2)
+    textRank = nx.pagerank(graph, weight='weight')
+    keyphrases = sorted(textRank, key=textRank.get, reverse=True)[:n]
     # print("keyphrases")
     # for i in range(len(keyphrases)):
     #     print(keyphrases[i])
@@ -57,23 +53,23 @@ def summarize(filePath, keyphrases, numberofSentences):
     global textRank, sentenceDictionary, sentences
     sentenceScore = {}
     for i in sentenceDictionary.keys():
-        position = float(i+1) / (float(len(sentences)) + 1.0)
+        position = float(i + 1) / (float(len(sentences)) + 1.0)
         positionalFeatureWeight = 1.0 / (math.pi * math.sqrt(position * (1.0 - position)))
         sumKeyPhrases = 0.0
         for keyphrase in keyphrases:
-                if keyphrase in sentenceDictionary[i]:
-                    sumKeyPhrases += textRank[keyphrase]
+            if keyphrase in sentenceDictionary[i]:
+                sumKeyPhrases += textRank[keyphrase]
         sentenceScore[i] = sumKeyPhrases * positionalFeatureWeight
-    sortedSentenceScores = sorted(sentenceScore.items(), key=operator.itemgetter(1),reverse=True)[:numberofSentences]
-    sortedSentenceScores = sorted(sortedSentenceScores,key=operator.itemgetter(0),reverse=False)
+    sortedSentenceScores = sorted(sentenceScore.items(), key=operator.itemgetter(1), reverse=True)[:numberofSentences]
+    sortedSentenceScores = sorted(sortedSentenceScores, key=operator.itemgetter(0), reverse=False)
     print("\nSummary: ")
     summary = []
-    with io.open("../Marathi/summaries/" + (filePath).split('/')[-1] + "_TextRankPositionalSummarizer", "w", encoding='utf-8') as outFile:
+    with io.open("../Marathi/summaries/" + (filePath).split('/')[-1] + "_TextRankPositionalSummarizer", "w",
+                 encoding='utf-8') as outFile:
         for i in range(0, len(sortedSentenceScores)):
             print(sentences[sortedSentenceScores[i][0]])
             outFile.write(sentences[sortedSentenceScores[i][0]] + "\n")
         outFile.close()
-
 
 
 window = 10
@@ -83,6 +79,8 @@ textRank = {}
 sentenceDictionary = collections.defaultdict(dict)
 size = 0
 sentences = []
+
+
 # else:
 #     print("recursive")
 #     docsFolder = "/home/akshay/PycharmProjects/Marathi/documents/"
@@ -118,13 +116,6 @@ def process(arg1, arg2, arg3):
     else:
         print("not enough parameters")
 
+
 if __name__ == "__main__":
     process(sys.argv[1], sys.argv[2], sys.argv[3])
-
-
-
-
-
-
-
-
