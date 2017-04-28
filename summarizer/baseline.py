@@ -90,7 +90,7 @@ class SummaryTool(object):
         paragraphs = self.split_content_to_paragraphs(content)
 
         summary = []
-        a
+        
         # Add the best sentence from each paragraph
         for p in paragraphs:
             sentence = self.get_best_sentence(p, sentences_dic).strip()
