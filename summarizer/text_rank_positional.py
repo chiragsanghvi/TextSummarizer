@@ -6,16 +6,26 @@ import math
 import operator
 import sys
 import networkx as nx
-
 from preprocess import cleanText
 
 
+window = 10
+numberofSentences = 6
+nodeHash = {}
+textRank = {}
+sentenceDictionary = collections.defaultdict(dict)
+size = 0
+sentences = []
+
+
 def generatepositionaldistribution():
+    '''
+        Creates a weighted positional distribution of sentence scores based on their position in the text corpus
+    '''
     global nodeHash, sentenceDictionary, sentences, size
     positional_dictionary = collections.defaultdict(dict)
     count = 0
     for i in sentenceDictionary.keys():
-        # print(len(sentenceDictionary))
         for j in range(0, len(sentenceDictionary[i])):
             count += 1
             position = float(count) / (float(size) + 1.0)
@@ -26,12 +36,13 @@ def generatepositionaldistribution():
                     nodeHash[word] = positional_dictionary[i][j]
             else:
                 nodeHash[word] = positional_dictionary[i][j]
-                # print(positional_dictionary)
-                # for key in nodeHash:
-                # print(key + ": " + str(nodeHash[key]))
 
 
 def textrank():
+    '''
+        Generates a graph based ranking model for the tokens
+    :return: Keyphrases that are most relevant for generating the summary.
+    '''
     global sentenceDictionary, nodeHash, textRank
     graph = nx.Graph()
     graph.add_nodes_from(nodeHash.keys())
@@ -43,13 +54,17 @@ def textrank():
                 graph.add_edge(current_word, word, weight=(nodeHash[current_word] + nodeHash[word]) / 2)
     textRank = nx.pagerank(graph, weight='weight')
     keyphrases = sorted(textRank, key=textRank.get, reverse=True)[:n]
-    # print("keyphrases")
-    # for i in range(len(keyphrases)):
-    #     print(keyphrases[i])
     return keyphrases
 
 
 def summarize(filePath, keyphrases, numberofSentences):
+    '''
+        Generates the summary and writes the summary to the file.
+    :param filePath: path of file to be used for summarization.
+    :param keyphrases: Extracted keyphrases
+    :param numberofSentences: Number of sentences needed as a summary
+    :output: Writes the summary to the file
+    '''
     global textRank, sentenceDictionary, sentences
     sentenceScore = {}
     for i in sentenceDictionary.keys():
@@ -72,38 +87,12 @@ def summarize(filePath, keyphrases, numberofSentences):
         outFile.close()
 
 
-window = 10
-numberofSentences = 6
-nodeHash = {}
-textRank = {}
-sentenceDictionary = collections.defaultdict(dict)
-size = 0
-sentences = []
-
-
-# else:
-#     print("recursive")
-#     docsFolder = "/home/akshay/PycharmProjects/Marathi/documents/"
-#     for root, dirs, files in os.walk(docsFolder):
-#         for filename in files:
-#             if filename.endswith(".txt"):
-#                 print(filename)
-#                 sentenceDictionary = collections.defaultdict(dict)
-#                 sentences = []
-#                 sentenceDictionary, sentences, size = cleanText(docsFolder+filename)
-#                 # print(len(sentenceDictionary))
-#                 for i in sentenceDictionary.keys():
-#                     print(" ".join(sentenceDictionary[i]))
-#                 window = 10
-#                 n = int(math.ceil(min(0.1 * size, 7 * math.log(size))))
-#                 numberofSentences = 5
-#                 generatepositionaldistribution()
-#                 keyphrases = textrank()
-#                 summarize(keyphrases, numberofSentences)
-#
-
-
 def process(arg1, arg2, arg3):
+    '''
+    :param arg1: path to the file containing the text to be summarized
+    :param arg2: Number of sentences to be extracted as summary
+    :param arg3: size of the window to be used in the co-occurance relation
+    '''
     global window, n, numberofSentences, textRank, sentenceDictionary, size, sentences
     if arg1 != None and arg2 != None and arg3 != None:
         sentenceDictionary, sentences, size = cleanText(arg1)
